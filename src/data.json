@@ -1,0 +1,73 @@
+{
+	"portfolio": [
+		{ "project_num": 0, "date": "2019 - Present", "project_name": "XD Daily Challenges", "description": "Practice never makes perfect. Adobe's XD Daily Challenges are a fun way to expand outside my technical design comfort zone. Many of these challenges focus on mobile interactivity and personalization, which are increasingly critical to the design and development industry. It also gives me a chance to let loose with color again!", "image": "images/book-app.png",
+			"modal_images": []},
+		{ "project_num": 1, "date": "2018 - Present", "project_name": "NESN", "description": "Without the user, we are nothing. As one of only two developers for the nesn.com website, I utilize a modular design approach to update the site's design while considering known design principles and collecting internal feedback. I also contribute to the site's object-oriented codebase to create new functionality for internal stakeholders.", "image": "images/alternative-navs.jpg",
+			"modal_images": [
+			"images/iphone-mobile-menu2.jpg",
+			"images/getnesn-newlogo-altered.png",
+			"images/iphone-mobile-menu.png",
+			"images/nesn-page.jpg"
+		]},
+		{ "project_num": 2, "date": "2017 - 2018", "project_name": "Sperling Interactive Websites", "description": "Teamwork makes the dreamwork. I worked on a variety of projects for Sperling with varying degrees of responsibility in design and development. When tasked with design, I thought through the site's information architecture, adhered to client brand standards, and created wireframes and mockups with UX principles in mind. When tasked with development of another designer's mockup, I ensured that the project adhered to their vision while limiting code complexity and adhering to WordPress and team standards.", "image": "images/topsfield-fair.png",
+			"modal_images": [
+				"images/topsfield-single-article.png"
+		]},
+		{ "project_num": 3, "date": "2015 - 2017", "project_name": "MDC Pinterest Pins", "description": "Understand the audience. As a production artist and designer, I created social media imagery with relative free reign over design elements. Using the company's existing Pinterest board as a style guide, I illustrated whimsical and textual Pins depending on the content.", "image": "images/petpin.jpg",
+			"modal_images": [
+				"images/six-expert-movingtips.jpg",
+				"images/homestage.jpg",
+				"images/protips.jpg",
+				"images/summerreads_final.png",
+				"images/usdaloans_final.png"
+		]},
+		{ "project_num": 4, "date": "2016", "project_name": "Starz Digital Assets", "description": "Capture the intended vision. As an intern for Starz Entertainment, I created a variety of digital assets for popular TV shows. Each show had its own unique imagery, feel, and typography that all designers needed to adhere to. Using digital tools and front-end code to capture that spirit was the crux of the work.", "image": "images/micro_site.jpg",
+			"modal_images": [
+				"images/smalljoeshmoe.jpg",
+				"images/assetsmall_omari.jpg",
+				"images/sr_talentasset_comp.jpg"
+		]},
+		{ "project_num": 5, "date": "2016", "project_name": "Metzger Albee Public Relations", "description": "Communicate the message, and have fun doing it. Taking a sophisticated but friendly and experimental approach, my work at Metzger Albee consisted of logo design, WordPress development, and creation of new site design ideas. I also created email templates and site design updates for Metzger Albee's various clients while adhering to their existing design aesthetic.", "image": "images/thrive_slide.jpg",
+			"modal_images": [
+				"images/prfortechies_landing.jpg"
+		]},
+		{ "project_num": 6, "date": "2015", "project_name": "SDI Camps and Races Sites", "description": "Build a baseline. Using a well-defined structural approach to building unique designs, as an intern I utilized the Foundation Framework, jQuery, and an existing PHP framework provided by our lovely dev team to quickly and creatively experiment with assets to show potential clients. I also utilized this approach to build and launch a unique site design for a subscribed client within two weeks.", "image": "images/proto.jpg",
+			"modal_images": [
+				"images/test2.jpg",
+				"images/test3.jpg"
+		]},
+		{ "project_num": 7, "date": "2014", "project_name": "CAC Posters",
+			"description": "Stand out by pushing boundaries, and don't be afraid of color! In my student graphic and web design role, I created posters utilizing a variety of technical methods and styles to encourage visual diversity on the campus bulletin boards and appeal to different audiences. I also updated the Union microsite with event and program information, and created video-based digital signs to attract Union visitors' attention with movement.",
+			"image": "images/frisbee.jpg",
+			"modal_images": [
+				"images/brainrace.jpg",
+				"images/free-coffee.jpg",
+				"images/gamenight.jpg",
+				"images/goodluckfacebookcover2.jpg",
+				"images/goodluckfacebookprofile.jpg",
+				"images/unionscheduledigitalsign.jpg",
+				"images/googala-vertical.jpg",
+				"images/internight.jpg",
+				"images/ghana.png"
+		]},
+		{ "project_num": 8, "date": "2014", "project_name": "School of Energy Resources CAVE: 3D Assets", "description": "We are all creative, and we are all technical. My eagerness to learn new tricks lead me to explore 3D modeling as an intern for Wyoming's CAVE visualization environment. I assisted in building a realistic rendering of campus by contribuing buildings, textures, and objects to the cause. I also took advantage of my access to the environment and created my own personal project around restructuring parts of campus in the name of improved urban design!", "image": "images/tables.jpg",
+			"modal_images": [
+				"images/campusmodel.jpg",
+				"images/table.png",
+				"images/cave.jpg"
+		]},
+		{ "project_num": 9, "date": "2011 - 2014", "project_name": "University of Wyoming Coursework: Typography, Semiotics, and Branding", "description": "We are all students for life. My educational background in design has taken me across the design spectrum, but typography, design thinking, and semiotics remain valuable knowledge bases across industries. In my coursework I explored the structure of letterforms and typefaces, the process of building a brand, and the psychological phenomena behind visual symbols.", "image": "images/typeface.jpg",
+			"modal_images": [
+				"images/jiko-miru_cover.jpg",
+				"images/jiko-miru.jpg"
+		]}
+	],
+	"about": [
+		"You guessed it. My name is Colette! I like to think small and dream big by considering emergent processes in technical and visual design. What does this mean? To plan and iterate while exploring both the small details and the bigger picture. After all, like Checkhov’s Gun, the small stuff is what makes the big picture all the more fascinating.",
+		"I was always described as artistic and technically savvy in grade school, and my love of the arts, as well as my interest in computer science and business, led me to explore a career in digital design. From 2011 to 2014, I attended the University of Wyoming and received a Bachelors of Arts in Honors and Art with a Graphic Design emphasis. While in college, I developed my abilities in photography, printmaking, and drawing, which furthered my understanding of the art and design world as a whole. I also worked as a graphic and web designer for the Wyoming Union, designing dozens of posters and additional promotional material for community events on campus, and as a 3D modeling intern for the School of Energy Resources, creating virtual objects and buildings to display in a three dimensional rendering of campus.",
+		"After graduating, I interned and contracted as a web designer, web developer, production artist, and interactive designer in Denver and Boulder for School Datebooks, MDC Holdings, Metzger Albee Public Relations, and Starz Entertainment. I recently completed a Master of Science in Information and Communications Technology with a Web Design and Development emphasis through the University of Denver's University College program, and currently work in Boston as a web developer for New England Sports Network."
+	],
+	"homebgs": [
+		"images/video_alt.jpg"
+	]
+}
