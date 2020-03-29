@@ -28,7 +28,7 @@ nav {
   width: 100%;
   z-index: 100;
   position: fixed;
-  mix-blend-mode: multiply;
+  mix-blend-mode: luminosity;
   top: 0;
 }
 nav > * {
@@ -206,7 +206,6 @@ code {
   transform: translate(0%, 50%);
   width: 30%;
   display: block;
-  mix-blend-mode: multiply;
 }
 .st0 {
 	visibility: inherit; 
@@ -351,7 +350,6 @@ p {
     font-size: 13px;
     text-align: center;
     border: 1px rgba(186, 203, 255, 0.18) solid;
-
   }
   nav li a {
     letter-spacing: 1pt;
@@ -369,7 +367,6 @@ p {
     transform: translate(-50%, -50%);
     width: 90%;
     display: block;
-    mix-blend-mode: multiply;
   }
 
   /*Portfolio Page*/

@@ -9,7 +9,6 @@ class ProjectList extends React.Component{
       isModalOpen: false,
       currentProject: 0
     }
-
   }
 
   toggleModal = (project_num) => {
@@ -68,11 +67,13 @@ class ProjectList extends React.Component{
         <div className="content">
           <h2 className="fade-in" style={{color: '#ffffff', marginTop: '40px', clear: "both", userSelect: 'none'}}>{data.portfolio[this.state.currentProject].project_name}</h2>
           <h3 className="fade-in" style={{color: '#ffffff', clear: "both", lineHeight: '0', paddingBottom: '40px'}}>{data.portfolio[this.state.currentProject].date}</h3>
-          <div className="fade-in featured-image" style={{backgroundImage: 'url(' + data.portfolio[this.state.currentProject].image + ')'}}></div>
+          <div className="fade-in featured-image" style={document.documentElement.classList.contains('webp') ? {backgroundImage: 'url(' + data.portfolio[this.state.currentProject].image.webp + ')'} : {backgroundImage: 'url(' + data.portfolio[this.state.currentProject].image.fallback + ')'}}></div>
           <p className="fade-in" style={{color: '#ffffff', clear: "both", padding: '40px 0px 20px 0px'}}>{data.portfolio[this.state.currentProject].description}</p>
-          <img src={data.portfolio[this.state.currentProject].image} className="fade-in" />
+          <img src={document.documentElement.classList.contains('webp') ? data.portfolio[this.state.currentProject].image.webp : data.portfolio[this.state.currentProject].image.fallback} className="fade-in" />
           {data.portfolio[this.state.currentProject].modal_images.map(function(data, key){
-            return( <img src={data} key={key} className="fade-in" /> )
+            var dataImg;
+            document.documentElement.classList.contains('webp') ? dataImg = data.webp : dataImg = data.fallback;
+            return( <img src={dataImg} key={key} className="fade-in" /> )
           }, this)}
         </div>
       </Modal>
@@ -91,7 +92,7 @@ class ProjectItem extends React.Component{
 
   render(){
     const divStyle = {
-      backgroundImage: 'url(' + this.props.projectData.image + ')',
+      backgroundImage: document.documentElement.classList.contains('webp') ? 'url(' + this.props.projectData.image.webp + ')' : 'url(' + this.props.projectData.image.fallback + ')',
       backgroundSize: 'cover'
     };
     return (
