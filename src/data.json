@@ -13,13 +13,9 @@
 			"modal_images": [
 				{"webp": "images/topsfield-single-article.webp", "fallback": "sources/topsfield-single-article.jpg"}
 		]},
-		{ "project_num": 3, "date": "2015 - 2017", "project_name": "MDC Pinterest Pins", "description": "Understand the audience. As a production artist and designer, I created social media imagery with relative free reign over design elements. Using the company's existing Pinterest board as a style guide, I illustrated whimsical and textual Pins depending on the content.", "image": {"webp": "images/petpin.webp", "fallback": "sources/petpin.jpg"},
+		{ "project_num": 3, "date": "2015 - 2017", "project_name": "MDC Pinterest Pins", "description": "Understand the audience. As a production artist and designer, I created social media imagery with relative free reign over design elements. Using the company's existing Pinterest board as a style guide, I illustrated whimsical and textual Pins depending on the content.", "image": {"webp": "images/pinterest-showcase.webp", "fallback": "sources/pinterest-showcase.jpg"},
 			"modal_images": [
-				{"webp": "images/six-expert-movingtips.webp", "fallback": "sources/six-expert-movingtips.jpg"},
-				{"webp": "images/homestage.webp", "fallback": "sources/homestage.jpg"},
-				{"webp": "images/protips.webp", "fallback": "sources/protips.jpg"},
-				{"webp": "images/summerreads_final.webp", "fallback": "sources/summerreads_final.jpg"},
-				{"webp": "images/usdaloans_final.webp", "fallback": "sources/usdaloans_final.jpg"}
+				{"webp": "images/petpin.webp", "fallback": "sources/petpin.jpg"}
 		]},
 		{ "project_num": 4, "date": "2016", "project_name": "Starz Digital Assets", "description": "Capture the intended vision. As an intern for Starz Entertainment, I created a variety of digital assets for popular TV shows. Each show had its own unique imagery, feel, and typography that all designers needed to adhere to. Using digital tools and front-end code to capture that spirit was the crux of the work.", "image": {"webp": "images/micro_site.webp", "fallback": "sources/micro_site.jpg"},
 			"modal_images": [
@@ -38,17 +34,17 @@
 		]},
 		{ "project_num": 7, "date": "2014", "project_name": "CAC Posters",
 			"description": "Stand out by pushing boundaries, and don't be afraid of color! In my student graphic and web design role, I created posters utilizing a variety of technical methods and styles to encourage visual diversity on the campus bulletin boards and appeal to different audiences. I also updated the Union microsite with event and program information, and created video-based digital signs to attract Union visitors' attention with movement.",
-			"image": {"webp": "images/frisbee.webp", "fallback": "sources/frisbee.jpg"},
+			"image": {"webp": "images/showcase1.webp", "fallback": "sources/showcase1.jpg"},
 			"modal_images": [
-				{"webp": "images/brainrace.webp", "fallback": "sources/brainrace.jpg"},
-				{"webp": "images/free-coffee.webp", "fallback": "sources/free-coffee.jpg"},
+				{"webp": "images/ghana-on-wall.webp", "fallback": "sources/ghana-on-wall.jpg"},
+				{"webp": "images/frisbee.webp", "fallback": "sources/frisbee.jpg"},
 				{"webp": "images/gamenight.webp", "fallback": "sources/gamenight.jpg"},
+				{"webp": "images/brainrace.webp", "fallback": "sources/brainrace.jpg"},
 				{"webp": "images/goodluckfacebookcover2.webp", "fallback": "sources/goodluckfacebookcover2.jpg"},
 				{"webp": "images/goodluckfacebookprofile.webp", "fallback": "sources/goodluckfacebookprofile.jpg"},
 				{"webp": "images/unionscheduledigitalsign.webp", "fallback": "sources/unionscheduledigitalsign.jpg"},
 				{"webp": "images/googala-vertical.webp", "fallback": "sources/googala-vertical.jpg"},
-				{"webp": "images/internight.webp", "fallback": "sources/internight.jpg"},
-				{"webp": "images/ghana.webp", "fallback": "sources/ghana.jpg"}
+				{"webp": "images/internight.webp", "fallback": "sources/internight.jpg"}
 		]},
 		{ "project_num": 8, "date": "2014", "project_name": "School of Energy Resources CAVE: 3D Assets", "description": "We are all creative, and we are all technical. My eagerness to learn new tricks lead me to explore 3D modeling as an intern for Wyoming's CAVE visualization environment. I assisted in building a realistic rendering of campus by contribuing buildings, textures, and objects to the cause. I also took advantage of my access to the environment and created my own personal project around restructuring parts of campus in the name of improved urban design!", "image": {"webp": "images/tables.webp", "fallback": "sources/tables.jpg"},
 			"modal_images": [
