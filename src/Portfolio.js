@@ -97,7 +97,9 @@ class ProjectItem extends React.Component{
     };
     return (
       <div className="portfolio-item">
-        <div className="portfolio-image asyncImage" data-src={document.documentElement.classList.contains('webp') ? this.props.projectData.image.webp : this.props.projectData.image.fallback } style={divStyle} onClick={e => {this.props.onOpen();}}></div>
+        <div className="portfolio-image asyncImage" data-src={document.documentElement.classList.contains('webp') ? this.props.projectData.image.webp : this.props.projectData.image.fallback } style={divStyle} onClick={e => {this.props.onOpen();}}>
+          <div className="display-name">{this.props.projectData.project_name}</div>
+        </div>
       </div>
     )
   }

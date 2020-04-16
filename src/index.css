@@ -5,7 +5,7 @@
 h1, h2, h3, h4, h5, h6, a {
 	text-transform: uppercase;
 	font-weight: 300;
-	letter-spacing: 3pt;
+	letter-spacing: 2pt;
 }
 strong {
 	font-weight: 600;
@@ -20,25 +20,77 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #23294d;
 }
+
+/*Resets*/
+ul {
+  padding: 0;
+}
+ul li a {
+  transition: ease all 0.3s;
+  overflow: visible;
+  position: relative;
+}
+ul li a:after {
+  content: "";
+  width: 97%;
+  bottom: 0px;
+  background-color: #fff;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: all 0.1s;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+ul li a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*Navigation Flex Grid System*/
 nav {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3000;
+}
+.scrolling-nav {
+  background-color: rgb(35, 41, 77);
+}
+nav .grid-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(35, 41, 77);
+  height: 60px;
   width: 100%;
   z-index: 100;
-  position: fixed;
   mix-blend-mode: luminosity;
-  top: 0;
+  max-width: 1500px;
 }
-nav > * {
+.grid-container > * {
   margin: 10px 5px 14px 15px;
+  flex-basis: 100%;
 }
 nav h1 {
 	font-size: 20px;
 }
-nav ul {
-	float: right;
+nav .center {
+  text-align: center;
+}
+nav .right {
+  text-align: right;
+}
+nav .right a {
+  text-transform: initial;
+  letter-spacing: initial;
 }
 nav li {
 	display: inline;
@@ -51,6 +103,7 @@ nav ul svg {
   display: none;
   width: 100%;
 }
+/*End Navigation Flex Grid System*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -189,7 +242,7 @@ code {
   height: 100vh;
   overflow-y: hidden;
   -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
-  background-position-x: -200px;
+  background-size:cover;
 }
 #svgDiv {
   max-width: 600px;
@@ -233,11 +286,8 @@ code {
 }
 .portfolio-item {
 	position: relative;
-	width: 20%;
-	padding-bottom: 20%;
-}
-.portfolio-image:hover {
-	border-radius: 50%;
+	width: 25%;
+	padding-bottom: 25%;
 }
 .portfolio-image {
 	position: absolute;
@@ -253,6 +303,45 @@ code {
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
 	margin: 10px;
+  overflow:hidden;
+}
+.portfolio-image:after {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  transition-property: background-color, opacity;
+  transition-duration: 0.2s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  opacity: 0;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px; /*Safari Renderer will show edges without this*/
+}
+.portfolio-image:hover:after {
+  background-color: #fff;
+  opacity: 1;
+}
+.display-name {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.2s ease 0s, opacity 0.2s ease 0s;
+  transition-property: background-color, opacity;
+  transition-duration: 0.2s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  color: #23294d;
+  z-index: 30000000;
+  font-size: 1.5em;
+  padding: 20px;
+}
+.portfolio-image:hover .display-name {
+  opacity: 1;
 }
 
 /*Modals*/
@@ -299,7 +388,7 @@ code {
 .portfolio-style {
   display: flex; 
   flex-wrap: wrap; 
-  width: 90%; 
+  width: 80%; 
   margin-left: 10%;
 }
 
@@ -318,6 +407,18 @@ p {
   font-weight: 500;
   line-height: 40px;
 }
+@media all and (max-width: 1150px){
+  .portfolio-item {
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media all and (max-width: 1050px){
+  .hero-content {
+    width: 40%;
+  }
+}
 @media all and (max-width: 800px){
   p {
     font-size: 20px;
@@ -325,7 +426,25 @@ p {
   }
   .content {
     padding: 5px 30px 5px 30px;
-    margin: 40px auto 80px;
+    /*margin: 40px auto 80px;*/
+  }
+  .grid-container > * {
+    margin: 0;
+  }
+  .grid-container .right {
+    background-color: transparent;
+    top: 50px;
+    text-align: center;
+    height: 20px;
+  }
+  .grid-container .right li {
+    border: none;
+    width: initial;
+    padding: 0px 10px;
+    height: initial;
+  }
+  .grid-container .right li a {
+    padding: 0px;
   }
   nav ul {
     position: fixed;

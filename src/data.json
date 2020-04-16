@@ -64,6 +64,7 @@
 		"After graduating, I interned and contracted as a web designer, web developer, production artist, and interactive designer in Denver and Boulder for School Datebooks, MDC Holdings, Metzger Albee Public Relations, and Starz Entertainment. I recently completed a Master of Science in Information and Communications Technology with a Web Design and Development emphasis through the University of Denver's University College program, and currently work in Boston as a web developer for New England Sports Network."
 	],
 	"homebgs": [
-		{"webp": "images/video_alt.webp", "fallback": "sources/video_alt.jpg"}
+		{"webp": "images/video_alt.webp", "fallback": "sources/video_alt.jpg"},
+		{"webp": "images/abstraction.webp", "fallback": "sources/abstraction.jpg"}
 	]
 }

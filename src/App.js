@@ -37,6 +37,23 @@ class AppContainer extends React.Component {
     }
   }
 
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(){
+    let scrollTop = window.pageYOffset;
+    if ( scrollTop > 0 ) {
+      document.querySelector('nav').classList.add("scrolling-nav");
+    } else {
+      document.querySelector('nav').classList.remove("scrolling-nav");
+    }
+  }
+
   loadImages(){
     // This function is loaded after the Home and Portfolio pages are mounted
     const objects = document.getElementsByClassName('asyncImage');
@@ -57,29 +74,35 @@ class AppContainer extends React.Component {
   render(){
     return (
       <Router>
-        <div>
+        <div style={{minHeight: '100vh'}}>
           <nav>
-            <Link style={{textDecoration: 'none', margin: 'none'}} to="/"><h1 style={{margin: '0px'}}>Colette<strong>\Fleury</strong></h1></Link>
-            <ul>
-              <li>
-                <Link to="/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.453l9 8.375v9.172h-6v-6h-6v6h-6v-9.172l9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z"/></svg>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.376 13.896l-2.376.479.479-2.375 1.897 1.896zm-1.425-2.368l1.896 1.896 5.153-5.153-1.896-1.896-5.153 5.153zm3.31 3.311l-.094.08v2.241c-3.927.269-6.853 1.148-8.25 1.649v-11.74c2.705-1.602 7.582-2.172 10.083-2.303v-1.766c-4.202.128-8.307.804-11 2.481-2.693-1.677-6.798-2.353-11-2.481v15.904c3.608.11 7.146.624 9.778 1.829.775.355 1.666.356 2.444 0 2.633-1.205 6.169-1.718 9.777-1.829v-5.804l-1.738 1.739zm-10.178 3.969c-1.397-.5-4.322-1.38-8.25-1.649v-12.228c4.727.356 6.9 1.341 8.25 2.14v11.737zm4.959-4.263l.177-1.066-2.219.549v1.019l2.042-.502z"/></svg>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/portfolio">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.23 15.5c-6.801 0-10.367-1.221-12.23-2.597v9.097h24v-8.949c-3.218 2.221-9.422 2.449-11.77 2.449zm1.77 2.532c0 1.087-.896 1.968-2 1.968s-2-.881-2-1.968v-1.032h4v1.032zm-14-8.541v-2.491h24v2.605c0 5.289-24 5.133-24-.114zm9-7.491c-1.104 0-2 .896-2 2v2h2v-1.5c0-.276.224-.5.5-.5h5c.276 0 .5.224.5.5v1.5h2v-2c0-1.104-.896-2-2-2h-6z"/></svg>
-                  Portfolio
-                </Link>
-              </li>
-            </ul>
+            <div className="grid-container">
+              <ul>
+                <li>
+                  <Link to="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.453l9 8.375v9.172h-6v-6h-6v6h-6v-9.172l9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z"/></svg>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.376 13.896l-2.376.479.479-2.375 1.897 1.896zm-1.425-2.368l1.896 1.896 5.153-5.153-1.896-1.896-5.153 5.153zm3.31 3.311l-.094.08v2.241c-3.927.269-6.853 1.148-8.25 1.649v-11.74c2.705-1.602 7.582-2.172 10.083-2.303v-1.766c-4.202.128-8.307.804-11 2.481-2.693-1.677-6.798-2.353-11-2.481v15.904c3.608.11 7.146.624 9.778 1.829.775.355 1.666.356 2.444 0 2.633-1.205 6.169-1.718 9.777-1.829v-5.804l-1.738 1.739zm-10.178 3.969c-1.397-.5-4.322-1.38-8.25-1.649v-12.228c4.727.356 6.9 1.341 8.25 2.14v11.737zm4.959-4.263l.177-1.066-2.219.549v1.019l2.042-.502z"/></svg>
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.23 15.5c-6.801 0-10.367-1.221-12.23-2.597v9.097h24v-8.949c-3.218 2.221-9.422 2.449-11.77 2.449zm1.77 2.532c0 1.087-.896 1.968-2 1.968s-2-.881-2-1.968v-1.032h4v1.032zm-14-8.541v-2.491h24v2.605c0 5.289-24 5.133-24-.114zm9-7.491c-1.104 0-2 .896-2 2v2h2v-1.5c0-.276.224-.5.5-.5h5c.276 0 .5.224.5.5v1.5h2v-2c0-1.104-.896-2-2-2h-6z"/></svg>
+                    Portfolio
+                  </Link>
+                </li>
+              </ul>
+              <Link className="center" style={{textDecoration: 'none', margin: 'none'}} to="/"><h1 style={{margin: '0px'}}>Colette<strong>\Fleury</strong></h1></Link>
+              <ul className="right">
+                <li><a href="https://github.com/clfleury" target="new">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/colette-fleury-69776790/" target="new">LinkedIn</a></li>
+              </ul>
+            </div>
           </nav>
 
           {/* A <Switch> looks through its children <Route>s and
@@ -98,6 +121,7 @@ class AppContainer extends React.Component {
           </Switch>
           </Suspense>
         </div>
+        <footer className="grid-container" style={{height: '60px', display: 'flex', alignItems: "center"}}><p style={{textAlign: 'center', fontSize: '15px', margin: '0px', padding: '0px'}}>&copy; 2020 Colette Fleury</p></footer>
       </Router>
     );
   }
