@@ -12,7 +12,10 @@ class ProjectList extends React.Component{
   }
 
   toggleModal = (project_num) => {
-    this.setState(prev=>({currentProject: project_num, isModalOpen: !prev.isModalOpen}));
+    this.setState(
+      prev=>({currentProject: project_num, isModalOpen: !prev.isModalOpen}),
+      () => {this.state.isModalOpen === true ? document.querySelector('body').classList.add('modal-open') : document.querySelector('body').classList.remove('modal-open') }
+    );
   }
 
   toggleProjectsForward = () => {
@@ -20,7 +23,6 @@ class ProjectList extends React.Component{
       this.setState(prev => ({
         currentProject: prev.currentProject + 1
       }));
-      //console.log()
     } else {
       this.setState({
         currentProject: 0
@@ -92,7 +94,7 @@ class ProjectItem extends React.Component{
 
   render(){
     const divStyle = {
-      backgroundImage: 'url("none")',
+      backgroundImage: 'url("' + this.props.imagePlaceHolder + '")',
       backgroundSize: 'cover'
     };
     return (
