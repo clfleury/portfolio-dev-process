@@ -4,6 +4,7 @@
 			"modal_images": []},
 		{ "project_num": 1, "date": "2018 - Present", "project_name": "NESN", "description": "Without the user, we are nothing. As one of only two developers for the nesn.com website, I utilize a modular design approach to update the site's design while considering known design principles and collecting internal feedback. I also contribute to the site's object-oriented codebase to create new functionality for internal stakeholders.", "image": {"webp": "images/alternative-navs.webp", "fallback": "sources/alternative-navs.jpg"},
 			"modal_images": [
+			{"webp": "images/4k-landing.webp", "fallback": "sources/4k-landing.jpg"},
 			{"webp": "images/iphone-mobile-menu2.webp", "fallback": "sources/iphone-mobile-menu2.jpg"},
 			{"webp": "images/getnesn-newlogo-altered.webp", "fallback": "sources/getnesn-newlogo-altered.jpg"},
 			{"webp": "images/iphone-mobile-menu.webp", "fallback": "sources/iphone-mobile-menu.jpg"},

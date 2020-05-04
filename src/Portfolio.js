@@ -1,6 +1,6 @@
 import React from "react";
-import data from './data.json';
-
+import { data } from './App.js';
+//console.log(data);
 class ProjectList extends React.Component{
 
   constructor(props){
@@ -129,10 +129,16 @@ export default class Portfolio extends React.Component {
   render(){
     return (
       <div className="portfolio fade-in">
+      {this.props.loading ? <div>loading</div> :
+      <div>
+      <div className="hero-secondary" style={{ backgroundImage: document.documentElement.classList.contains('webp') ? "url(" + data.homebgs[Math.floor(Math.random() * data.homebgs.length)].webp + ")" : "url(" + data.homebgs[Math.floor(Math.random() * data.homebgs.length)].fallback + ")" }}></div>
       <div className="content" style={{marginBottom: '0px', marginTop: '10px'}}>
         <h2 className="page-title">My <strong>Work</strong></h2>
-        </div>
-          <ProjectList />
+        <hr />
+      </div>
+      <ProjectList />
+      </div>
+      }
       </div>
     );
   }

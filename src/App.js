@@ -6,12 +6,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import data from './data.json';
+//import data from './data.json';
 const About = React.lazy(() => import('./About'));
 const Portfolio = React.lazy(() => import('./Portfolio'));
+const Redirect = React.lazy(() => import('./Redirect'));
 
 const placeHolder =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+export var data = {};
 
 class AppContainer extends React.Component {
 
@@ -20,12 +22,21 @@ class AppContainer extends React.Component {
 
     this.state = {
       data: data,
+      loading: true,
       imagePlaceHolder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
     }
   }
 
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
+    fetch('http://colettefleury.com/data.json')
+    .then((response) => {
+      return response.json();
+    }).then((siteData) => {
+      data = siteData
+      this.setState({loading: false}, () => this.loadImages());
+    })
+    console.log(data);
   }
 
   componentWillUnmount(){
@@ -105,13 +116,16 @@ class AppContainer extends React.Component {
           <Suspense fallback={<div style={{position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', backgroundColor: '#23294d'}}>Loading...</div>}>
           <Switch>
             <Route path="/about">
-              <About />
+              <About loading={this.state.loading} />
             </Route>
             <Route path="/portfolio">
-              <Portfolio loadImages={this.loadImages} imagePlaceHolder={this.state.imagePlaceHolder} />
+              <Portfolio data={this.state.data} loadImages={this.loadImages} imagePlaceHolder={this.state.imagePlaceHolder} loading={this.state.loading} />
+            </Route>
+            <Route path="/usabilityfinalproject">
+              <Redirect loc="http://colettefleury.com/usabilityfinalproject/index.html" />
             </Route>
             <Route path="/">
-              <Home loadImages={this.loadImages} />
+              <Home loadImages={this.loadImages} loading={this.state.loading} />
             </Route>
           </Switch>
           </Suspense>
@@ -125,12 +139,14 @@ class AppContainer extends React.Component {
 class Home extends React.Component {
 
   componentDidMount() {
-    this.props.loadImages()
+    this.props.loadImages();
   }
 
   render(){
     return (
       <div className="home fade-in">
+        {this.props.loading ? <div>loading</div> :
+          <div>
         <div className="hero asyncImage" data-src={document.documentElement.classList.contains('webp') ? data.homebgs[Math.floor(Math.random() * data.homebgs.length)].webp : data.homebgs[Math.floor(Math.random() * data.homebgs.length)].fallback} style={{ backgroundImage: "url(" + placeHolder + ")"}}>
         </div>
         <div className="hero-content">
@@ -140,7 +156,9 @@ class Home extends React.Component {
             <h3> BE HUMBLED. BE CURIOUS. BE INSPIRED.</h3>
           </div>
         </div>
-      </div>
+        </div>
+      }
+    </div>
     )
   }
 }
