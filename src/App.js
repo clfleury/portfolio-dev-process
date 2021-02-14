@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+//for local testing
 //import data from './data.json';
 const About = React.lazy(() => import('./About'));
 const Portfolio = React.lazy(() => import('./Portfolio'));
@@ -13,7 +14,9 @@ const Redirect = React.lazy(() => import('./Redirect'));
 
 const placeHolder =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
-export var data = {};
+//for local testing
+//export { data };
+export var data;
 
 class AppContainer extends React.Component {
 
@@ -36,7 +39,9 @@ class AppContainer extends React.Component {
       data = siteData
       this.setState({loading: false}, () => this.loadImages());
     })
-    console.log(data);
+    //for local testing
+    //this.setState({loading: false}, () => this.loadImages());
+    //console.log(data);
   }
 
   componentWillUnmount(){

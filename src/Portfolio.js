@@ -53,17 +53,17 @@ class ProjectList extends React.Component{
       }, this)}
       </div>
       <Modal className="fade-in" isOpen={this.state.isModalOpen}>
-      <div onClick={e => {this.toggleModal(this.state.currentProject)}} style={{padding: '30px', float: 'left'}}>
-        <svg style={{fill:'#ffffff'}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path pointerEvents="all" d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg>
+      <div className="project-modal__exit" onClick={e => {this.toggleModal(this.state.currentProject)}}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path pointerEvents="all" d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg>
       </div>
-        <div onClick={this.toggleProjectsForward} style={{float: 'right', padding: '30px', paddingLeft: '8px'}}>
+        <div className="project-modal__toggle-backwards" onClick={this.toggleProjectsForward}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path style={{fill:'#ffffff'}} d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+            <path  d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
           </svg>
         </div>
-        <div onClick={this.toggleProjectsBackward} style={{float: 'right', padding: '30px', paddingRight: '8px'}}>
+        <div className="project-modal__toggle-forwards" onClick={this.toggleProjectsBackward}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path style={{fill:'#ffffff'}} d="M11,23l2.8-2.8L7.6,14H24v-4H7.6l6.2-6.2L11,1L0,12L11,23z"/>
+            <path d="M11,23l2.8-2.8L7.6,14H24v-4H7.6l6.2-6.2L11,1L0,12L11,23z"/>
           </svg>
         </div>
         <div className="content">
@@ -133,7 +133,7 @@ export default class Portfolio extends React.Component {
       <div>
       <div className="hero-secondary" style={{ backgroundImage: document.documentElement.classList.contains('webp') ? "url(" + data.homebgs[Math.floor(Math.random() * data.homebgs.length)].webp + ")" : "url(" + data.homebgs[Math.floor(Math.random() * data.homebgs.length)].fallback + ")" }}></div>
       <div className="content" style={{marginBottom: '0px', marginTop: '10px'}}>
-        <h2 className="page-title">My <strong>Work</strong></h2>
+        <h2 className="page-title">My<strong>\Work</strong></h2>
         <hr />
       </div>
       <ProjectList />
