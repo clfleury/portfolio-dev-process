@@ -129,6 +129,9 @@ class AppContainer extends React.Component {
             <Route path="/usabilityfinalproject">
               <Redirect loc="http://colettefleury.com/usabilityfinalproject/index.html" />
             </Route>
+            <Route path="/mendel">
+              <Redirect loc="http://colettefleury.com/mendel" />
+            </Route>
             <Route path="/">
               <Home loadImages={this.loadImages} loading={this.state.loading} />
             </Route>
