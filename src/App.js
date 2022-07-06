@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 //for local testing
-//import data from './data.json';
+import data from './data.json';
 const About = React.lazy(() => import('./About'));
 const Portfolio = React.lazy(() => import('./Portfolio'));
 const Redirect = React.lazy(() => import('./Redirect'));
@@ -15,8 +15,8 @@ const Redirect = React.lazy(() => import('./Redirect'));
 const placeHolder =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
 //for local testing
-//export { data };
-export var data;
+export { data };
+//export var data;
 
 class AppContainer extends React.Component {
 
@@ -32,15 +32,15 @@ class AppContainer extends React.Component {
 
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
-    fetch('http://colettefleury.com/data.json')
+    /*fetch('http://colettefleury.com/data.json')
     .then((response) => {
       return response.json();
     }).then((siteData) => {
       data = siteData
       this.setState({loading: false}, () => this.loadImages());
-    })
+    })*/
     //for local testing
-    //this.setState({loading: false}, () => this.loadImages());
+    this.setState({loading: false}, () => this.loadImages());
     //console.log(data);
   }
 
