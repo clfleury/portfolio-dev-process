@@ -1,42 +1,46 @@
 {
 	"portfolio": [
-		{ "project_num": 0, "date": "2020", "project_name": "Booking System", "description": "Practice never makes perfect. Creating this booking system was a fun way to expand outside my technical and design comfort zone. I built the initial wireframes and mockups in Adobe XD, then moved to build out a front-end example implementation using React, which allowed for easy state propagation across design elements.", "image": {"webp": "images/booking-mock-1.webp", "fallback": "sources/booking-mock-1.jpg"},
+		{ "project_num": 0, "date": "2020-2022", "project_name": "iRacing Properties", "description": "Build reusable systems. As a developer for iRacing, I refactored their existing WordPress codebase to improve reusability by utilizing the Gutenberg block editor. I created several dynamic blocks that could be configured in a code-free environment by our in-house designer to match his artistic vision. I also designed and developed static site modules and a live-streaming video platform that allowed more robust searching and browsing than its previous iteration in React.", "image": {"webp": "images/iracing-public.png", "fallback": "images/iracing-public.png"},
+			"modal_images": [
+				{"webp": "images/iracing-public-2.png", "fallback": "images/iracing-public-2.png"}
+			]},
+		{ "project_num": 1, "date": "2020", "project_name": "Booking System", "description": "Practice never makes perfect. Creating this booking system was a fun way to expand outside my technical and design comfort zone. I built the initial wireframes and mockups in Adobe XD, then moved to build out a front-end example implementation using React, which allowed for easy state propagation across design elements.", "image": {"webp": "images/booking-mock-1.webp", "fallback": "sources/booking-mock-1.jpg"},
 			"modal_images": [
 				{"webp": "images/booking-mock-2.webp", "fallback": "sources/booking-mock-2.jpg"},
 				{"webp": "images/booking-mock-3.webp", "fallback": "sources/booking-mock-3.jpg"}
 			]},
-		{ "project_num": 1, "date": "2018 - 2020", "project_name": "NESN", "description": "Without the user, we are nothing. As one of only two developers for the nesn.com website, I utilized a modular design approach to update the site's design while considering known design principles and collecting internal feedback. I also contributed to the site's object-oriented codebase to create new functionality for internal stakeholders.", "image": {"webp": "images/4k-landing.webp", "fallback": "images/4k-landing.jpg"},
+		{ "project_num": 2, "date": "2018 - 2020", "project_name": "NESN", "description": "Without the user, we are nothing. As one of only two developers for the nesn.com website, I utilized a modular design approach to update the site's design while considering known design principles and collecting internal feedback. I also contributed to the site's object-oriented codebase to create new functionality for internal stakeholders.", "image": {"webp": "images/4k-landing.webp", "fallback": "images/4k-landing.jpg"},
 			"modal_images": [
 			{"webp": "images/nesnmobilemenu.webp", "fallback": "sources/nesnmobilemenu.jpg"},
 			{"webp": "images/getnesn-newlogo-altered.webp", "fallback": "sources/getnesn-newlogo-altered.jpg"},
 			{"webp": "images/nesn-page.webp", "fallback": "sources/nesn-page.jpg"}
 		]},
-		{ "project_num": 2, "date": "2017 - 2018", "project_name": "Sperling Interactive Websites", "description": "Teamwork makes the dreamwork. I worked on a variety of projects for Sperling with varying degrees of responsibility in design and development. When tasked with design, I thought through the site's information architecture, adhered to client brand standards, and created wireframes and mockups with UX principles in mind. When tasked with development of another designer's mockup, I ensured that the project adhered to their vision while limiting code complexity and adhering to WordPress and team standards.", "image": {"webp": "images/aspen.webp", "fallback": "sources/aspen.jpg"},
+		{ "project_num": 3, "date": "2017 - 2018", "project_name": "Sperling Interactive Websites", "description": "Teamwork makes the dreamwork. I worked on a variety of projects for Sperling with varying degrees of responsibility in design and development. When tasked with design, I thought through the site's information architecture, adhered to client brand standards, and created wireframes and mockups with UX principles in mind. When tasked with development of another designer's mockup, I ensured that the project adhered to their vision while limiting code complexity and adhering to WordPress and team standards.", "image": {"webp": "images/aspen.webp", "fallback": "sources/aspen.jpg"},
 			"modal_images": [
 				{"webp": "images/topsfield-fair.webp", "fallback": "sources/topsfield-fair.jpg"},
 				{"webp": "images/topsfield-single-article.webp", "fallback": "sources/topsfield-single-article.jpg"}
 		]},
-		{ "project_num": 3, "date": "2015 - 2017", "project_name": "MDC Pinterest Pins", "description": "Understand the audience. As a production artist and designer, I created social media imagery with relative free reign over design elements. Using the company's existing Pinterest board as a style guide, I illustrated whimsical and textual Pins depending on the content.", "image": {"webp": "images/pinterest-showcase.webp", "fallback": "sources/pinterest-showcase.jpg"},
+		{ "project_num": 4, "date": "2015 - 2017", "project_name": "MDC Pinterest Pins", "description": "Understand the audience. As a production artist and designer, I created social media imagery with relative free reign over design elements. Using the company's existing Pinterest board as a style guide, I illustrated whimsical and textual Pins depending on the content.", "image": {"webp": "images/pinterest-showcase.webp", "fallback": "sources/pinterest-showcase.jpg"},
 			"modal_images": [
 				{"webp": "images/petpin.webp", "fallback": "sources/petpin.jpg"}
 		]},
-		{ "project_num": 4, "date": "2016", "project_name": "Starz Digital Assets", "description": "Capture the intended vision. As an intern for Starz Entertainment, I created a variety of digital assets for popular TV shows. Each show had its own unique imagery, feel, and typography that all designers needed to adhere to. Using digital tools and front-end code to capture that spirit was the crux of the work.", "image": {"webp": "images/micro_site.webp", "fallback": "sources/micro_site.jpg"},
+		{ "project_num": 5, "date": "2016", "project_name": "Starz Digital Assets", "description": "Capture the intended vision. As an intern for Starz Entertainment, I created a variety of digital assets for popular TV shows. Each show had its own unique imagery, feel, and typography that all designers needed to adhere to. Using digital tools and front-end code to capture that spirit was the crux of the work.", "image": {"webp": "images/micro_site.webp", "fallback": "sources/micro_site.jpg"},
 			"modal_images": [
 				{"webp": "images/smalljoeshmoe.webp", "fallback": "sources/smalljoeshmoe.jpg"},
 				{"webp": "images/assetsmall_omari.webp", "fallback": "sources/assetsmall_omari.jpg"},
 				{"webp": "images/sr_talentasset_comp.webp", "fallback": "sources/sr_talentasset_comp.jpg"}
 		]},
-		{ "project_num": 5, "date": "2016", "project_name": "Metzger Albee Public Relations", "description": "Communicate the message, and have fun doing it. Taking a sophisticated but friendly and experimental approach, my work at Metzger Albee consisted of logo design, WordPress development, and creation of new site design ideas. I also created email templates and site design updates for Metzger Albee's various clients while adhering to their existing design aesthetic.", "image": {"webp": "images/thrive_slide.webp", "fallback": "sources/thrive_slide.jpg"},
+		{ "project_num": 6, "date": "2016", "project_name": "Metzger Albee Public Relations", "description": "Communicate the message, and have fun doing it. Taking a sophisticated but friendly and experimental approach, my work at Metzger Albee consisted of logo design, WordPress development, and creation of new site design ideas. I also created email templates and site design updates for Metzger Albee's various clients while adhering to their existing design aesthetic.", "image": {"webp": "images/thrive_slide.webp", "fallback": "sources/thrive_slide.jpg"},
 			"modal_images": [
 				{"webp": "images/prfortechies_landing.webp", "fallback": "sources/prfortechies_landing.jpg"},
 				{"webp": "images/wwrenyolds.webp", "fallback": "sources/wwrenyolds.jpg"}
 		]},
-		{ "project_num": 6, "date": "2015", "project_name": "SDI Camps and Races Sites", "description": "Build a baseline. Using a well-defined structural approach to building unique designs, as an intern I utilized the Foundation Framework, jQuery, and an existing PHP framework provided by our lovely dev team to quickly and creatively experiment with assets to show potential clients. I also utilized this approach to build and launch a unique site design for a subscribed client within two weeks.", "image": {"webp": "images/proto.webp", "fallback": "sources/proto.jpg"},
+		{ "project_num": 7, "date": "2015", "project_name": "SDI Camps and Races Sites", "description": "Build a baseline. Using a well-defined structural approach to building unique designs, as an intern I utilized the Foundation Framework, jQuery, and an existing PHP framework provided by our lovely dev team to quickly and creatively experiment with assets to show potential clients. I also utilized this approach to build and launch a unique site design for a subscribed client within two weeks.", "image": {"webp": "images/proto.webp", "fallback": "sources/proto.jpg"},
 			"modal_images": [
 				{"webp": "images/test2.webp", "fallback": "sources/test2.jpg"},
 				{"webp": "images/test3.webp", "fallback": "sources/test3.jpg"}
 		]},
-		{ "project_num": 7, "date": "2014", "project_name": "CAC Posters",
+		{ "project_num": 8, "date": "2014", "project_name": "CAC Posters",
 			"description": "Stand out by pushing boundaries, and don't be afraid of color! In my student graphic and web design role, I created posters utilizing a variety of technical methods and styles to encourage visual diversity on the campus bulletin boards and appeal to different audiences. I also updated the Union microsite with event and program information, and created video-based digital signs to attract Union visitors' attention with movement.",
 			"image": {"webp": "images/showcase1.webp", "fallback": "sources/showcase1.jpg"},
 			"modal_images": [
@@ -50,13 +54,13 @@
 				{"webp": "images/internight.webp", "fallback": "sources/internight.jpg"},
 				{"webp": "images/vinniemontez4.webp", "fallback": "sources/vinniemontez4.jpg"}
 		]},
-		{ "project_num": 8, "date": "2014", "project_name": "School of Energy Resources CAVE: 3D Assets", "description": "We are all creative, and we are all technical. My eagerness to learn new tricks lead me to explore 3D modeling as an intern for Wyoming's CAVE visualization environment. I assisted in building a realistic rendering of campus by contribuing buildings, textures, and objects to the cause. I also took advantage of my access to the environment and created my own personal project around restructuring parts of campus in the name of improved urban design!", "image": {"webp": "images/tables.webp", "fallback": "sources/tables.jpg"},
+		{ "project_num": 9, "date": "2014", "project_name": "School of Energy Resources CAVE: 3D Assets", "description": "We are all creative, and we are all technical. My eagerness to learn new tricks lead me to explore 3D modeling as an intern for Wyoming's CAVE visualization environment. I assisted in building a realistic rendering of campus by contribuing buildings, textures, and objects to the cause. I also took advantage of my access to the environment and created my own personal project around restructuring parts of campus in the name of improved urban design!", "image": {"webp": "images/tables.webp", "fallback": "sources/tables.jpg"},
 			"modal_images": [
 				{"webp": "images/campusmodel.webp", "fallback": "sources/campusmodel.jpg"},
 				{"webp": "images/table.webp", "fallback": "sources/table.png"},
 				{"webp": "images/cave.webp", "fallback": "sources/cave.jpg"}
 		]},
-		{ "project_num": 9, "date": "2011 - 2014", "project_name": "University of Wyoming Coursework: Typography, Semiotics, and Branding", "description": "We are all students for life. My educational background in design has taken me across the design spectrum, but typography, design thinking, and semiotics remain valuable knowledge bases across industries. In my coursework I explored the structure of letterforms and typefaces, the process of building a brand, and the psychological phenomena behind visual symbols.", "image": {"webp": "images/typeface.webp", "fallback": "sources/typeface.jpg"},
+		{ "project_num": 10, "date": "2011 - 2014", "project_name": "University of Wyoming Coursework: Typography, Semiotics, and Branding", "description": "We are all students for life. My educational background in design has taken me across the design spectrum, but typography, design thinking, and semiotics remain valuable knowledge bases across industries. In my coursework I explored the structure of letterforms and typefaces, the process of building a brand, and the psychological phenomena behind visual symbols.", "image": {"webp": "images/typeface.webp", "fallback": "sources/typeface.jpg"},
 			"modal_images": [
 				{"webp": "images/jiko-miru_cover.webp", "fallback": "sources/jiko-miru_cover.jpg"},
 				{"webp": "images/jiko-miru.webp", "fallback": "sources/jiko-miru.jpg"}
