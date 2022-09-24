@@ -75,6 +75,8 @@
 	"homebgs": [
 		{"webp": "images/video_alt.webp", "fallback": "sources/video_alt.jpg"},
 		{"webp": "images/abstraction.webp", "fallback": "sources/abstraction.jpg"},
-		{"webp": "images/nature_6_home.webp", "fallback": "sources/nature_6_home.jpg"}
+		{"webp": "images/nature_6_home.webp", "fallback": "sources/nature_6_home.jpg"},
+		{"webp": "images/butterfly.jpg", "fallback": "images/butterfly.jpg"},
+		{"webp": "sources/generative-art.jpg", "fallback": "sources/generative-art.jpg"}
 	]
 }

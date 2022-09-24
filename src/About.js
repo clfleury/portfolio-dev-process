@@ -1,12 +1,13 @@
 import React from "react";
 import { data } from "./App.js";
+import { LoadingIcon } from "./LoadingIcon";
 
 export default class About extends React.Component {
   render() {
     return (
       <div className="fade-in">
         {this.props.loading ? (
-          <div>loading</div>
+          <LoadingIcon />
         ) : (
           <div>
             <div

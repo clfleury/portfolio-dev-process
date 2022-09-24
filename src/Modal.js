@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { PortfolioContext } from "./site-contexts";
 
-export const Modal = ({ data, projectNum = 0, toggleModal }) => {
+export const Modal = ({ data, projectNum = 0, closeModal }) => {
   const { portfolio } = data;
 
-  //right now the modal relies on several different sibling divs to show itself
-  //const [isVisible, setIsVisible] = useState(false);
+  //this is a highly specific implementation; ultimately, we could use component composition to reduce the functionality to a simple opening and closing of a fullscreen modal that can contain any data
   const [currentProjectNum, setCurrentProjectNum] = useState(projectNum);
 
   //update project num when passed project num changes
@@ -32,7 +31,6 @@ export const Modal = ({ data, projectNum = 0, toggleModal }) => {
   return (
     <PortfolioContext.Consumer>
       {(state) => {
-        console.log(projectNum, state);
         return (
           <>
             {state.isModalOpen && (
@@ -40,7 +38,7 @@ export const Modal = ({ data, projectNum = 0, toggleModal }) => {
                 <div
                   className="project-modal__exit"
                   onClick={(e) => {
-                    toggleModal(currentProjectNum);
+                    closeModal();
                   }}
                 >
                   <svg
@@ -139,6 +137,7 @@ export const Modal = ({ data, projectNum = 0, toggleModal }) => {
                         ? portfolio[currentProjectNum].image.webp
                         : portfolio[currentProjectNum].image.fallback
                     }
+                    alt="project detail"
                     className="fade-in"
                   />
                   {data.portfolio[currentProjectNum].modal_images.map(
@@ -148,7 +147,12 @@ export const Modal = ({ data, projectNum = 0, toggleModal }) => {
                         ? (dataImg = data.webp)
                         : (dataImg = data.fallback);
                       return (
-                        <img src={dataImg} key={key} className="fade-in" />
+                        <img
+                          src={dataImg}
+                          key={key}
+                          alt="project-detail"
+                          className="fade-in"
+                        />
                       );
                     }
                   )}

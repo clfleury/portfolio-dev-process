@@ -1,8 +1,10 @@
 import React from "react";
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { LoadingIcon } from "./LoadingIcon";
 //for local testing
 import data from "./data.json";
+
 const About = React.lazy(() => import("./About"));
 const Portfolio = React.lazy(() => import("./Portfolio"));
 const Redirect = React.lazy(() => import("./Redirect"));
@@ -172,7 +174,7 @@ class AppContainer extends React.Component {
                   backgroundColor: "#23294d",
                 }}
               >
-                Loading...
+                <LoadingIcon />
               </div>
             }
           >
@@ -232,7 +234,7 @@ class Home extends React.Component {
     return (
       <div className="home fade-in">
         {this.props.loading ? (
-          <div>loading</div>
+          <LoadingIcon />
         ) : (
           <div>
             <div

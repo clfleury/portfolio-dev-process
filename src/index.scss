@@ -1,3 +1,7 @@
+
+$button-hover-color: rgba(255,255,255,0.2);
+$button-translation: all 0.05s ease 0s;
+
 * {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #fff;
@@ -256,6 +260,35 @@ code {
   }
 }
 
+/*Loading Icons*/
+.loading-icon-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+	place-content: center;
+  .loading-icon {
+    animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
 /*Homepage*/
 .hero {
   height: 100vh;
@@ -310,6 +343,10 @@ code {
   text-align: center;
   letter-spacing: initial;
   margin: 0;
+}
+
+.hero-content h3 {
+  margin-top: 10px;
 }
 
 /*Portfolio*/
@@ -391,34 +428,39 @@ code {
     fill: #ffffff;
   }
   .project-modal__exit {
-    padding: 30px;
+    margin: 30px;
     float: left;
     cursor: pointer;
+    path {
+    transition: $button-translation;
+    }
     &:hover {
       path {
-        fill:#010110;
+        fill:$button-hover-color;
       }
     }
   }
   .project-modal__toggle-backwards {
     float: right;
-    padding: 30px;
-    padding-left: 8px;
+    margin: 30px;
+    margin-left: 8px;
     cursor: pointer;
+    transition: $button-translation;
     &:hover {
       path {
-        fill:#121233;
+        fill:$button-hover-color;
       }
     }
   }
   .project-modal__toggle-forwards {
     float: right; 
-    padding: 30px;
-    padding-right: 8px;
+    margin: 30px;
+    margin-right: 8px;
     cursor: pointer;
+    transition: $button-translation;
     &:hover {
       path {
-        fill:#121233;
+        fill:$button-hover-color;
       }
     }
   }
