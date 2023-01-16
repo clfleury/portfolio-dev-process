@@ -4,6 +4,7 @@ import { Modal } from "./Modal.js";
 import { LoadingIcon } from "./LoadingIcon";
 import { PortfolioContext } from "./site-contexts";
 import * as R from "ramda";
+import { PortfolioModalContent } from "./PortfolioModalContent.js";
 
 const ProjectList = () => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -28,7 +29,7 @@ const ProjectList = () => {
   var mapIndexed = R.addIndex(R.map);
 
   return (
-    <PortfolioContext.Provider value={{ currentProject, isModalOpen }}>
+    <PortfolioContext.Provider value={{ data, currentProject, isModalOpen }}>
       <div className="portfolio-container fade-in">
         <div className="portfolio-style">
           {mapIndexed((data, key) => {
@@ -44,11 +45,7 @@ const ProjectList = () => {
             );
           }, portfolioData)}
         </div>
-        <Modal
-          data={data}
-          projectNum={currentProject}
-          closeModal={closeModal}
-        />
+        <Modal closeModal={closeModal} ModalContent={PortfolioModalContent} />
       </div>
     </PortfolioContext.Provider>
   );
