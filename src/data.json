@@ -6,9 +6,9 @@
 			{"webp": "images/ecoregions.jpg", "fallback": "images/ecoregions.jpg"}
 		]},
 		{ "project_num": 1, "date": "2022-2023", "project_name": "LogicMonitor Visualizations", "description": "An interactive picture is worth a million words. As a UI engineer for LogicMonitor, I built out various specs for interactive line graphs based on provided user stories and static mocks. These graphs show users various detailed transformations of the data to help them better understand underlying trends, such as line of best fit, anomaly detection, and forecasting algorithms. I also contributed to other chart development, such as pie charts, and worked on various bugs to support the broader system.", 
-		"image": {"webp": "sources/examplegraph.jpg", "fallback": "sources/examplegraph.jpg"},
+		"image": {"webp": "sources/examplegraph.jpg", "fallback": "sources/examplegraph.jpg"}, 
 		"modal_images": [
-			{"webp": "sources/coolexample.gif", "fallback": "sources/coolexample.gif"}
+			{"webp": "images/dynamicanomaly.gif", "fallback": "images/dynamicanomaly.gif"}
 		]},
 		{ "project_num": 2, "date": "2020-2022", "project_name": "iRacing Properties", "description": "Build reusable systems. As a developer for iRacing, I refactored their existing WordPress codebase to improve reusability by utilizing the Gutenberg block editor. I created several dynamic blocks that could be configured in a code-free environment by our in-house designer to match his artistic vision. I also designed and developed static site modules and a live-streaming video platform that allowed more robust searching and browsing than its previous iteration in React.", "image": {"webp": "images/iracing-public.png", "fallback": "images/iracing-public.png"},
 			"modal_images": [
