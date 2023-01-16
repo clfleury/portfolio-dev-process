@@ -17,7 +17,8 @@
 		{ "project_num": 3, "date": "2020", "project_name": "Booking System", "description": "Practice never makes perfect. Creating this booking system was a fun way to expand outside my technical and design comfort zone. I built the initial wireframes and mockups in Adobe XD, then moved to build out a front-end example implementation using React, which allowed for easy state propagation across design elements.", "image": {"webp": "images/booking-mock-1.webp", "fallback": "sources/booking-mock-1.jpg"},
 			"modal_images": [
 				{"webp": "images/booking-mock-2.webp", "fallback": "sources/booking-mock-2.jpg"},
-				{"webp": "images/booking-mock-3.webp", "fallback": "sources/booking-mock-3.jpg"}
+				{"webp": "images/booking-mock-3.webp", "fallback": "sources/booking-mock-3.jpg"},
+				{"webp": "images/booking-mock-5.webp", "fallback": "sources/booking-mock-5.jpg"}
 			]},
 		{ "project_num": 4, "date": "2018 - 2020", "project_name": "NESN", "description": "Without the user, we are nothing. As one of only two developers for the nesn.com website, I utilized a modular design approach to update the site's design while considering known design principles and collecting internal feedback. I also contributed to the site's object-oriented codebase to create new functionality for internal stakeholders.", "image": {"webp": "images/4k-landing.webp", "fallback": "images/4k-landing.jpg"},
 			"modal_images": [

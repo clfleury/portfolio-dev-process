@@ -217,7 +217,7 @@ class AppContainer extends React.Component {
               padding: "0px",
             }}
           >
-            &copy; 2020 Colette Fleury
+            &copy; {new Date().getFullYear()} Colette Fleury
           </p>
         </footer>
       </Router>
