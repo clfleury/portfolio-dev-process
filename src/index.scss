@@ -317,7 +317,6 @@ code {
   top: 50%;
   margin-top: -380px;
   transform: translate(0%, 50%);
-  width: 30%;
   display: block;
   h2 {
       line-height: 0.9;
@@ -522,11 +521,6 @@ p {
     position: relative;
     width: 50%;
     padding-bottom: 50%;
-  }
-}
-@media all and (max-width: 1050px){
-  .hero-content {
-    width: 40%;
   }
 }
 @media all and (max-width: 800px){
