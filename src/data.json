@@ -5,12 +5,11 @@
 		"modal_images": [
 			{"webp": "images/ecoregions.jpg", "fallback": "images/ecoregions.jpg"}
 		]},
-		{ "project_num": 1, "date": "2022-2023", "project_name": "LogicMonitor Visualizations", "description": "An interactive picture is worth a million words. As a UI engineer for LogicMonitor, I built out various specs for interactive line graphs based on provided user stories and static mocks. These graphs show users various detailed transformations of the data to help them better understand underlying trends, such as line of best fit, anomaly detection, and forecasting algorithms. I also contributed to other chart development, such as pie charts, and worked on various bugs to support the broader system.", 
-		"image": {"webp": "sources/examplegraph.jpg", "fallback": "sources/examplegraph.jpg"}, 
+		{ "project_num": 1, "date": "2022-2023", "project_name": "LogicMonitor Visualizations", "description": "An interactive picture is worth a million words. As a UI engineer for LogicMonitor, I built out various specs for interactive line graphs based on provided user stories and static mocks. These graphs show users various detailed transformations of the data to help them better understand underlying trends, such as line of best fit, anomaly detection, and forecasting algorithms. I also contributed to other chart development, such as pie charts, and worked on various bugs to support the broader system. For proprietary reasons, I am only showing a simplified version of the product.", 
+		"image": {"webp": "sources/examplegraphsimple.jpg", "fallback": "sources/examplegraphsimple.jpg"}, 
 		"modal_images": [
-			{"webp": "images/dynamicanomaly.gif", "fallback": "images/dynamicanomaly.gif"}
 		]},
-		{ "project_num": 2, "date": "2020-2022", "project_name": "iRacing Properties", "description": "Build reusable systems. As a developer for iRacing, I refactored their existing WordPress codebase to improve reusability by utilizing the Gutenberg block editor. I created several dynamic blocks that could be configured in a code-free environment by our in-house designer to match his artistic vision. I also designed and developed static site modules and a live-streaming video platform that allowed more robust searching and browsing than its previous iteration in React.", "image": {"webp": "images/iracing-public.png", "fallback": "images/iracing-public.png"},
+		{ "project_num": 2, "date": "2020-present", "project_name": "iRacing Properties", "description": "Build reusable systems. As a developer for iRacing, I refactored their existing WordPress codebase to improve reusability by utilizing the Gutenberg block editor. I created several dynamic blocks that could be configured in a code-free environment by our in-house designer to match his artistic vision. I also designed and developed static site modules and a live-streaming video platform that allowed more robust searching and browsing than its previous iteration in React.", "image": {"webp": "images/iracing-public.png", "fallback": "images/iracing-public.png"},
 			"modal_images": [
 				{"webp": "images/iracing-public-2.png", "fallback": "images/iracing-public-2.png"}
 			]},
@@ -78,16 +77,13 @@
 		]}
 	],
 	"about": [
-		"You guessed it. My name is Colette! I like to think small and dream big by considering emergent processes in technical and visual design. What does this mean? To plan and iterate while exploring both the small details and the bigger picture. After all, like Checkhov’s Gun, the small stuff is what makes the big picture all the more fascinating.",
-		"I was always described as artistic and technically savvy in grade school, and my love of the arts, as well as my interest in computer science and business, led me to explore a career in digital design. From 2011 to 2014, I attended the University of Wyoming and received a Bachelors of Arts in Honors and Art with a Graphic Design emphasis. While in college, I developed my abilities in photography, printmaking, and drawing, which furthered my understanding of the art and design world as a whole. I also worked as a graphic and web designer for the Wyoming Union, designing dozens of posters and additional promotional material for community events on campus, and as a 3D modeling intern for the School of Energy Resources, creating virtual objects and buildings to display in a three dimensional rendering of campus.",
-		"Curious about how websites and other user interfaces worked in addition to how they looked and felt, I chose to hybridize my career as a designer by learning more about web programming. After graduating, I interned and contracted as a web designer, web developer, production artist, and interactive designer in Denver. I then worked full time in Massachusetts as a web designer and developer while completing a Master of Science in Information and Communications Technology with a Web Design and Development emphasis through the University of Denver.",
-		"Over the years, my interests in digital user interfaces and their varying levels of complexity have evolved, leading me to a current emphasis on data visualization and mapping and how these interface types relate to the human learning experience.  I currently work in Boston as a UI engineer for LogicMonitor, an IT infrastructure monitoring company, and focus on building data visualization components in React."
+		"Hi there! My name is Colette, welcome to my portfolio site! I am a digital engineer with a design background specializing in visualization, interactivity, and front-end programming.",
+		"I was always described as artistic and technically savvy in grade school, and my love of the arts, as well as my interest in computer science and business, led me to explore a career in digital design. I attended the University of Wyoming and received a Bachelors of Arts with a Graphic Design emphasis, where I developed my abilities in art and design.",
+		"Curious about how websites and other user interfaces worked in addition to how they looked and felt, I chose to hybridize my career as a designer by learning more about web programming. After graduating, I interned and contracted as a web designer, web developer, production artist, and interactive designer in Denver. I then worked full time in Boston as a web designer and developer while completing a Master of Science in Information and Communications Technology through the University of Denver.",
+		"Over the years, my interests in digital user interfaces and their varying levels of complexity have evolved, leading me to a current emphasis in data visualization and mapping and how these interface types relate to the human learning experience. My most recent professional experience revolves around building data visualization components in React."
 	],
 	"homebgs": [
-		{"webp": "images/video_alt.webp", "fallback": "sources/video_alt.jpg"},
 		{"webp": "images/abstraction.webp", "fallback": "sources/abstraction.jpg"},
-		{"webp": "images/nature_6_home.webp", "fallback": "sources/nature_6_home.jpg"},
-		{"webp": "images/butterfly.jpg", "fallback": "images/butterfly.jpg"},
 		{"webp": "sources/generative-art.jpg", "fallback": "sources/generative-art.jpg"}
 	]
 }

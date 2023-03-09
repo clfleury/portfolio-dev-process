@@ -7,9 +7,15 @@ $button-translation: all 0.05s ease 0s;
 	color: #fff;
 }
 h1, h2, h3, h4, h5, h6, a {
-	text-transform: uppercase;
+	text-transform: lowercase;
 	font-weight: 300;
 	letter-spacing: 2pt;
+}
+h2 {
+  font-size: 15.3pt;
+  strong {
+    font-size: default;
+  }
 }
 strong {
 	font-weight: 600;
@@ -293,12 +299,14 @@ code {
 .hero {
   height: 100vh;
   overflow-y: hidden;
-  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+  -webkit-mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
   background-size:cover;
+  width: 100%;
+  position: absolute;
 }
 .hero-secondary {
 	overflow-y: hidden;
-	-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	-webkit-mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
 	background-size:cover;
 	position: absolute;
 	height: 50vh;
@@ -310,14 +318,17 @@ code {
 #svgDiv {
   max-width: 600px;
 }
-.hero-content {
-  z-index: 1000;
+.hero-content-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
   position: absolute;
-  right: 80px;
-  top: 50%;
-  margin-top: -380px;
-  transform: translate(0%, 50%);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+}
+.hero-content {
   h2 {
       line-height: 0.9;
   }
@@ -331,11 +342,11 @@ code {
 	stroke: transparent;
 }
 .hero-cta {
-	margin-top: -40px;
 	margin-left: 110px;
 }
 .hero-cta h2 {
-	font-size: 35px;
+  font-size: 40pt;
+  font-weight: bold;
 }
 .hero-content h2, .hero-content h3 {
   color: #fff;
@@ -346,6 +357,7 @@ code {
 
 .hero-content h3 {
   margin-top: 10px;
+  font-size: 20pt;
 }
 
 /*Portfolio*/
@@ -578,14 +590,17 @@ p {
 
   /*Home Page*/
   .hero-content {
-    z-index: 1000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: initial;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    display: block;
+    margin-left: 0;
+    width: 100vw;
+  }
+  .hero-cta {
+    margin-left: 0;
+    h2 {
+    font-size: 25pt;
+    }
+    h3 {
+      font-size: 15pt;
+    }
   }
 
   /*Portfolio Page*/
