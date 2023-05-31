@@ -84,6 +84,10 @@
 	],
 	"homebgs": [
 		{"webp": "images/abstraction.webp", "fallback": "sources/abstraction.jpg"},
-		{"webp": "sources/generative-art.jpg", "fallback": "sources/generative-art.jpg"}
+		{"webp": "sources/generative-art.jpg", "fallback": "sources/generative-art.jpg"},
+		{"webp": "sources/spiral-friends.png", "fallback": "sources/spiral-friends.png"},
+		{"webp": "sources/fun-spirals.png", "fallback": "sources/fun-spirals.png"},
+		{"webp": "sources/sparse-spiral.png", "fallback": "sources/sparse-spiral.png"},
+		{"webp": "sources/spots.png", "fallback": "sources/spots.png"}
 	]
 }

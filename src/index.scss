@@ -2,6 +2,25 @@
 $button-hover-color: rgba(255,255,255,0.2);
 $button-translation: all 0.05s ease 0s;
 
+/* Font Sizes */
+$font-extra-small: 1.1rem;
+$font-small: 1.3rem;
+$font-medium: 1.5rem;
+$font-large: 2rem;
+
+/* Letter Spacing */
+$spacing-small: 0.2rem;
+
+/* Line Height */
+$line-height-medium: 2.3rem;
+
+/*Padding*/
+$padding-none: 0rem;
+$padding-small: 0.5rem;
+$padding-medium: 1rem;
+$padding-large: 2rem;
+$padding-extra-large: 4rem;
+
 * {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #fff;
@@ -9,7 +28,13 @@ $button-translation: all 0.05s ease 0s;
 h1, h2, h3, h4, h5, h6, a {
 	text-transform: lowercase;
 	font-weight: 300;
-	letter-spacing: 2pt;
+	letter-spacing: $spacing-small;
+}
+h1 {
+  font-size: $font-small;
+  strong {
+    font-size: $font-small;
+  }
 }
 h2 {
   font-size: 15.3pt;
@@ -40,11 +65,13 @@ body.modal-open {
 /*Resets*/
 ul {
   padding: 0;
+  margin: 0;
 }
 ul li a {
   transition: ease all 0.3s;
   overflow: visible;
   position: relative;
+  font-size: $font-extra-small;
 }
 ul li a:after {
   content: "";
@@ -80,7 +107,6 @@ img[data-src], div[data-src] {
 nav {
   display: flex;
   justify-content: center;
-  height: 60px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -88,23 +114,20 @@ nav {
 }
 .scrolling-nav {
   background-color: rgb(35, 41, 77);
+  box-shadow: 0px 5px 5px rgba(0,0,0, 0.1);
 }
 nav .grid-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 2.8rem;
   width: 100%;
   z-index: 100;
   mix-blend-mode: luminosity;
-  max-width: 1500px;
+  padding: $padding-medium $padding-large;
 }
 .grid-container > * {
-  margin: 10px 5px 14px 15px;
   flex-basis: 100%;
-}
-nav h1 {
-	font-size: 20px;
 }
 nav .center {
   text-align: center;
@@ -118,7 +141,10 @@ nav .right a {
 }
 nav li {
 	display: inline;
-	padding-right: 10px;
+	padding-right: $padding-small;
+}
+nav li:last-child {
+	padding-right: $padding-none;
 }
 nav li a {
 	text-decoration: none;
@@ -132,6 +158,12 @@ nav ul svg {
 /*Generic grid system*/
 .grid {
 	display: flex;
+}
+.centered-container {
+  justify-content: center;
+  max-width: 1500px;
+  display: flex;
+  margin: 0 auto;
 }
 
 code {
@@ -495,13 +527,9 @@ code {
 }
 
 .content {
-	padding: 5px 70px 5px 55px;
-	margin: 40px auto;
-	max-width: 800px;
-  margin-top: 85px;
-}
-.portfolio {
-  margin-top: 85px;
+  padding: $padding-large $padding-extra-large $padding-medium;
+  margin: $padding-extra-large auto $padding-none auto;
+  max-width: 50rem;
 }
 .portfolio-style {
   display: flex;
@@ -516,17 +544,21 @@ code {
 /*About*/
 .page-title {
 	letter-spacing: 5pt;
-	font-size: 35px;
+	font-size: $font-large;
+  margin-top: $padding-extra-large;
+}
+.page-title strong {
+  font-size: $font-large;
 }
 p {
   margin: 0px 0px;
   color: white;
   padding-top: 20px;
   margin: 0 auto;
-  font-size: 23px;
+  font-size: $font-medium;
   text-align: justify;
   font-weight: 500;
-  line-height: 40px;
+  line-height: $line-height-medium;
 }
 @media all and (max-width: 1150px){
   .portfolio-item {
@@ -542,10 +574,15 @@ p {
   }
   .content {
     padding: 5px 30px 5px 30px;
-    /*margin: 40px auto 80px;*/
   }
-  .grid-container > * {
-    margin: 0;
+  nav {
+    .grid-container {
+      margin: $padding-none;
+      padding: $padding-medium $padding-none;
+      * {
+        margin: $padding-none;
+      }
+    }
   }
   nav ul {
     position: fixed;
@@ -565,7 +602,7 @@ p {
     width: 50%;
   }
 	nav .right a {
-		text-transform: uppercase;
+		text-transform: lowercase;
 		letter-spacing: 1pt;
 	}
   nav ul svg {
@@ -612,7 +649,6 @@ p {
   .portfolio-style {
     width: 100%;
     margin-left: 0%;
-    margin-bottom: 80px;
   }
   .project-modal img {
     max-width: 100%;
@@ -622,5 +658,26 @@ p {
     height: 550px;
     width: 100%;
     background-size: cover;
+  }
+  footer {
+    margin-bottom: 5rem;
+  }
+  ul li a:after {
+    width: 100%;
+  }
+}
+
+/*Font Size System*/
+* {
+  font-size: 1vw;
+}
+@media all and (max-width: 1150px){
+  * {
+    font-size: 1vw;
+  }
+}
+@media all and (max-width: 800px){
+  * {
+    font-size: 4vw;
   }
 }

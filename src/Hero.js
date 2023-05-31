@@ -6,7 +6,7 @@ const placeHolder =
 
 export const Hero = () => {
     return (
-        <>
+        <div className="centered-container">
         <div
             className="hero asyncImage"
             data-src={
@@ -26,11 +26,11 @@ export const Hero = () => {
                 <div className="hero-content">
                     <div className="hero-cta">
                     <h2>Connecting the Dots</h2>
-                    <h3>visualization\design\engineering</h3>
+                    <h3>visualization\interactivity\engineering</h3>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
