@@ -4,7 +4,7 @@ $button-translation: all 0.05s ease 0s;
 
 /* Font Sizes */
 $font-extra-small: 1.1rem;
-$font-small: 1.3rem;
+$font-small: 1.2rem;
 $font-medium: 1.5rem;
 $font-large: 2rem;
 
@@ -37,7 +37,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 15.3pt;
+  font-size: $font-medium;
   strong {
     font-size: default;
   }
@@ -331,14 +331,14 @@ code {
 .hero {
   height: 100vh;
   overflow-y: hidden;
-  -webkit-mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+  mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
   background-size:cover;
   width: 100%;
   position: absolute;
 }
 .hero-secondary {
 	overflow-y: hidden;
-	-webkit-mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
 	background-size:cover;
 	position: absolute;
 	height: 50vh;
@@ -464,6 +464,7 @@ code {
   background: -moz-linear-gradient(left, #2F2F4F, #121233);
   background: linear-gradient(to left, #2F2F4F, #121233);
   overflow: auto;
+  overflow-x: hidden;
   top: 0;
   bottom: 0;
   transition: 0.3s all ease-in-out;
@@ -569,7 +570,7 @@ p {
 }
 @media all and (max-width: 800px){
   p {
-    font-size: 20px;
+    font-size: $font-small;
     line-height: 34px;
   }
   .content {
@@ -673,7 +674,7 @@ p {
 }
 @media all and (max-width: 1150px){
   * {
-    font-size: 1vw;
+    font-size: 1.7vw;
   }
 }
 @media all and (max-width: 800px){

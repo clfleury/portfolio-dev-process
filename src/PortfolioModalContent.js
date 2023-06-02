@@ -56,13 +56,26 @@ export const PortfolioModalContent = ({
             </svg>
           </div>
           <div className="content">
+          <h4
+              className="fade-in"
+              style={{
+                color: "#ffffff",
+                clear: "both",
+                userSelect: "none",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                lineHeight: "0",
+              }}
+            >
+              {portfolio[currentProjectNum].project_cat && portfolio[currentProjectNum].project_cat}
+            </h4>
             <h2
               className="fade-in"
               style={{
                 color: "#ffffff",
-                marginTop: "40px",
                 clear: "both",
                 userSelect: "none",
+                lineHeight: 0.8
               }}
             >
               {portfolio[currentProjectNum].project_name}
