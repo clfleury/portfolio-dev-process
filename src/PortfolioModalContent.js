@@ -133,12 +133,19 @@ export const PortfolioModalContent = ({
                 ? (dataImg = data.webp)
                 : (dataImg = data.fallback);
               return (
+                <>
+                {dataImg.includes('mp4') ?
+                  <video width="100%" autoplay="true" loop>
+                    <source src={dataImg} type="video/mp4" />
+                  </video>
+                :
                 <img
                   src={dataImg}
                   key={key}
                   alt="project-detail"
                   className="fade-in"
-                />
+                />}
+                </>
               );
             })}
           </div>

@@ -79,6 +79,7 @@ class ProjectItem extends React.Component {
           }}
         >
           <div className="display-name">
+            <p style={{fontStyle: "italic", fontWeight: "bold", fontSize: '1rem', color: '#23294d', lineHeight: '1.3rem', textAlign: 'left'}}>{this.props.projectData.project_cat}</p>
             {this.props.projectData.project_name}
           </div>
         </div>

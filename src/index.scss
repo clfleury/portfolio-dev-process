@@ -411,7 +411,7 @@ code {
 	bottom: 2px;
 	right: 2px;
 	border-radius: 20px;
-	margin: 10px;
+	margin: $padding-small;
   overflow:hidden;
 }
 .portfolio-image:after {
@@ -517,7 +517,7 @@ code {
 }
 .project-modal img {
   display: block;
-  max-width: 800px;
+  max-width: 100%;
   margin: 20px 0px;
   -webkit-user-select: none;
   -khtml-user-select: none;
