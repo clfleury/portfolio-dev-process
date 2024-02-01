@@ -28,7 +28,7 @@ export default class About extends React.Component {
                     ")",
               }}
             ></div>
-            <div className="content" style={{ marginBottom: "0" }}>
+            <div className="content">
               <h2 className="page-title">
                 ABOUT<strong>\ME</strong>
               </h2>

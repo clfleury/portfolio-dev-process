@@ -119,7 +119,6 @@ export default class Portfolio extends React.Component {
             ></div>
             <div
               className="content"
-              style={{ marginBottom: "0px", marginTop: "10px" }}
             >
               <h2 className="page-title">
                 My<strong>\Work</strong>
