@@ -4,25 +4,23 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LoadingIcon } from "./LoadingIcon";
 import { SiteHeaderTitle } from "./SiteHeaderTitle";
 import { Hero } from "./Hero";
+import ScrollToTop from "./scrollTop";
+
 //for local testing
-import data from "./data.json";
+//import data from "./data.json";
 
 const About = React.lazy(() => import("./About"));
 const Portfolio = React.lazy(() => import("./Portfolio"));
 const Redirect = React.lazy(() => import("./Redirect"));
 
-const placeHolder =
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
-//for local testing
-export { data };
-//export var data;
-
 class AppContainer extends React.Component {
   constructor(props) {
     super(props);
 
+    //const initialData = process.env.NODE_ENV === "development" ? data : {}; //BACKUP
+
     this.state = {
-      data: data,
+      data: {},
       loading: true,
       imagePlaceHolder:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=",
@@ -31,16 +29,36 @@ class AppContainer extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    /*fetch('http://colettefleury.com/data.json')
-    .then((response) => {
-      return response.json();
-    }).then((siteData) => {
-      data = siteData
-      this.setState({loading: false}, () => this.loadImages());
-    })*/
+    // switch to relative fetch
+    /*if (process.env.NODE_ENV !== "development"){
+      fetch('https://colettefleury.com/data.json')
+      .then((response) => {
+        console.log({response})
+        return response.json();
+      }).then((siteData) => {
+        console.log({siteData})
+       data = siteData
+        this.setState({loading: false}, () => this.loadImages());
+      });
+ }
     //for local testing
-    this.setState({ loading: false }, () => this.loadImages());
-    //console.log(data);
+   if (process.env.NODE_ENV === "development"){
+      this.setState({ loading: false }, () => this.loadImages());
+    }*/
+    fetch("data.json")
+      .then((response) => {
+        console.log({ response });
+        return response.json();
+      })
+      .then((siteData) => {
+        console.log({ siteData });
+        this.setState({ loading: false, data: siteData }, () =>
+          this.loadImages(),
+        );
+      })
+      .catch((e) => {
+        throw new Error(`HTTP error! status: ${e}`);
+      });
   }
 
   componentWillUnmount() {
@@ -178,31 +196,34 @@ class AppContainer extends React.Component {
               </div>
             }
           >
-            <Switch>
-              <Route path="/about">
-                <About loading={this.state.loading} />
-              </Route>
-              <Route path="/portfolio">
-                <Portfolio
-                  data={this.state.data}
-                  loadImages={this.loadImages}
-                  imagePlaceHolder={this.state.imagePlaceHolder}
-                  loading={this.state.loading}
-                />
-              </Route>
-              <Route path="/usabilityfinalproject">
-                <Redirect loc="http://colettefleury.com/usabilityfinalproject/index.html" />
-              </Route>
-              <Route path="/mendel">
-                <Redirect loc="http://colettefleury.com/mendel" />
-              </Route>
-              <Route path="/">
-                <Home
-                  loadImages={this.loadImages}
-                  loading={this.state.loading}
-                />
-              </Route>
-            </Switch>
+            <ScrollToTop>
+              <Switch>
+                <Route path="/about">
+                  <About loading={this.state.loading} data={this.state.data} />
+                </Route>
+                <Route path="/portfolio">
+                  <Portfolio
+                    data={this.state.data}
+                    loadImages={this.loadImages}
+                    imagePlaceHolder={this.state.imagePlaceHolder}
+                    loading={this.state.loading}
+                  />
+                </Route>
+                <Route path="/usabilityfinalproject">
+                  <Redirect loc="http://colettefleury.com/usabilityfinalproject/index.html" />
+                </Route>
+                <Route path="/mendel">
+                  <Redirect loc="http://colettefleury.com/mendel" />
+                </Route>
+                <Route path="/">
+                  <Home
+                    loadImages={this.loadImages}
+                    data={this.state.data}
+                    loading={this.state.loading}
+                  />
+                </Route>
+              </Switch>
+            </ScrollToTop>
           </Suspense>
         </div>
         <footer
@@ -237,7 +258,7 @@ class Home extends React.Component {
           <LoadingIcon />
         ) : (
           <div>
-           <Hero />
+            <Hero homebgs={this.props.data?.homebgs} />
           </div>
         )}
       </div>

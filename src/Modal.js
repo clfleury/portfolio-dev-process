@@ -8,8 +8,9 @@ export const Modal = ({ closeModal, ModalContent }) => {
         return (
           <>
             {state.isModalOpen && (
-              <div className="project-modal">
+              <div className="project-modal" id="project-modal">
                 <div
+                  style={{ position: "fixed", display: "block" }}
                   className="project-modal__exit"
                   onClick={(e) => {
                     closeModal();

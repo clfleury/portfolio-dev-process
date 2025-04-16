@@ -1,31 +1,37 @@
 * {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
 }
-h1, h2, h3, h4, h5, h6, a {
-	text-transform: uppercase;
-	font-weight: 300;
-	letter-spacing: 2pt;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2pt;
 }
 strong {
-	font-weight: 600;
+  font-weight: 600;
 }
 hr {
-	margin-bottom: 40px;
-	border-color: #fff;
+  margin-bottom: 40px;
+  border-color: #fff;
 }
 
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-	    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-	    sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: #23294d;
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #23294d;
 }
 body.modal-open {
-	overflow: hidden;
+  overflow: hidden;
 }
 /*Resets*/
 ul {
@@ -58,13 +64,15 @@ ul li a:hover:after {
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
-img, div {
-	opacity: 1;
-	transition: opacity 0.3s;
-	transition-delay: 250ms;
+img,
+div {
+  opacity: 1;
+  transition: opacity 0.3s;
+  transition-delay: 250ms;
 }
-img[data-src], div[data-src] {
-	opacity: 0;
+img[data-src],
+div[data-src] {
+  opacity: 0;
 }
 /*Navigation Flex Grid System*/
 nav {
@@ -94,7 +102,7 @@ nav .grid-container {
   flex-basis: 100%;
 }
 nav h1 {
-	font-size: 20px;
+  font-size: 20px;
 }
 nav .center {
   text-align: center;
@@ -107,11 +115,11 @@ nav .right a {
   letter-spacing: initial;
 }
 nav li {
-	display: inline;
-	padding-right: 10px;
+  display: inline;
+  padding-right: 10px;
 }
 nav li a {
-	text-decoration: none;
+  text-decoration: none;
 }
 nav ul svg {
   display: none;
@@ -121,11 +129,12 @@ nav ul svg {
 
 /*Generic grid system*/
 .grid {
-	display: flex;
+  display: flex;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /*Universal Fade In Animation*/
@@ -138,37 +147,37 @@ code {
 }
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -183,7 +192,7 @@ code {
 @keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -191,7 +200,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -202,7 +212,7 @@ code {
 @-moz-keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -210,7 +220,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -221,7 +232,7 @@ code {
 @-webkit-keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -229,7 +240,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -240,7 +252,7 @@ code {
 @-o-keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -248,7 +260,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -260,19 +273,31 @@ code {
 .hero {
   height: 100vh;
   overflow-y: hidden;
-  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
-  background-size:cover;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 0, 0))
+  );
+  background-size: cover;
 }
 .hero-secondary {
-	overflow-y: hidden;
-	-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
-	background-size:cover;
-	position: absolute;
-	height: 50vh;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
+  overflow-y: hidden;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 0, 0))
+  );
+  background-size: cover;
+  position: absolute;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 #svgDiv {
   max-width: 600px;
@@ -288,21 +313,23 @@ code {
   display: block;
 }
 .st0 {
-	visibility: inherit;
-	opacity: 1; transition: all 2s ease 0s;
-	stroke-dasharray: 1867.01, 1867.01;
-	stroke-dashoffset: 0;
-	fill: rgb(255, 255, 255);
-	stroke: transparent;
+  visibility: inherit;
+  opacity: 1;
+  transition: all 2s ease 0s;
+  stroke-dasharray: 1867.01, 1867.01;
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+  stroke: transparent;
 }
 .hero-cta {
-	margin-top: -30px;
-	margin-left: 110px;
+  margin-top: -30px;
+  margin-left: 110px;
 }
 .hero-cta h2 {
-	font-size: 35px;
+  font-size: 35px;
 }
-.hero-content h2, .hero-content h3 {
+.hero-content h2,
+.hero-content h3 {
   color: #fff;
   text-align: center;
   letter-spacing: initial;
@@ -315,21 +342,21 @@ code {
   flex-wrap: wrap;
 }
 .portfolio-item {
-	position: relative;
-	width: 33%;
-	padding-bottom: 33%;
+  position: relative;
+  width: 33%;
+  padding-bottom: 33%;
 }
 .portfolio-image {
-	position: absolute;
-	left: 0;
-	top: 0;
-	cursor: pointer;
-	min-width: 100px;
-	bottom: 2px;
-	right: 2px;
-	border-radius: 20px;
-	margin: 10px;
-  overflow:hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  min-width: 100px;
+  bottom: 2px;
+  right: 2px;
+  border-radius: 20px;
+  margin: 10px;
+  overflow: hidden;
 }
 .portfolio-image:after {
   content: "";
@@ -339,7 +366,9 @@ code {
   position: absolute;
   top: 0px;
   width: 100%;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  transition:
+    background-color 0.2s ease 0s,
+    opacity 0.2s ease 0s;
   transition-property: background-color, opacity;
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: ease, ease;
@@ -356,7 +385,9 @@ code {
   opacity: 0;
   position: absolute;
   bottom: 0;
-  transition: opacity 0.2s ease 0s, opacity 0.2s ease 0s;
+  transition:
+    opacity 0.2s ease 0s,
+    opacity 0.2s ease 0s;
   transition-property: background-color, opacity;
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: ease, ease;
@@ -376,10 +407,10 @@ code {
   height: 105%;
   z-index: 5000;
   position: fixed;
-  background: -webkit-linear-gradient(right, #2F2F4F, #121233);
-  background: -o-linear-gradient(left, #2F2F4F, #121233);
-  background: -moz-linear-gradient(left, #2F2F4F, #121233);
-  background: linear-gradient(to left, #2F2F4F, #121233);
+  background: -webkit-linear-gradient(right, #2f2f4f, #121233);
+  background: -o-linear-gradient(left, #2f2f4f, #121233);
+  background: -moz-linear-gradient(left, #2f2f4f, #121233);
+  background: linear-gradient(to left, #2f2f4f, #121233);
   overflow: auto;
   top: 0;
   bottom: 0;
@@ -403,9 +434,9 @@ code {
 }
 
 .content {
-	padding: 5px 70px 5px 55px;
-	margin: 40px auto;
-	max-width: 800px;
+  padding: 5px 70px 5px 55px;
+  margin: 40px auto;
+  max-width: 800px;
   margin-top: 85px;
 }
 .portfolio {
@@ -416,15 +447,15 @@ code {
   flex-wrap: wrap;
   width: 70%;
   margin-left: 10%;
-	background-color: #23294d;
-	margin-left: calc(15% - 30px);
+  background-color: #23294d;
+  margin-left: calc(15% - 30px);
   padding: 30px;
 }
 
 /*About*/
 .page-title {
-	letter-spacing: 5pt;
-	font-size: 35px;
+  letter-spacing: 5pt;
+  font-size: 35px;
 }
 p {
   margin: 0px 0px;
@@ -436,19 +467,19 @@ p {
   font-weight: 500;
   line-height: 40px;
 }
-@media all and (max-width: 1150px){
+@media all and (max-width: 1150px) {
   .portfolio-item {
     position: relative;
     width: 50%;
     padding-bottom: 50%;
   }
 }
-@media all and (max-width: 1050px){
+@media all and (max-width: 1050px) {
   .hero-content {
     width: 40%;
   }
 }
-@media all and (max-width: 800px){
+@media all and (max-width: 800px) {
   p {
     font-size: 20px;
     line-height: 34px;
@@ -477,10 +508,10 @@ p {
   nav .right li {
     width: 50%;
   }
-	nav .right a {
-		text-transform: uppercase;
-		letter-spacing: 1pt;
-	}
+  nav .right a {
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+  }
   nav ul svg {
     fill: #fff;
     width: 100%;
@@ -493,7 +524,7 @@ p {
     font-size: 11.5px;
     text-align: center;
     border: 1px rgba(186, 203, 255, 0.18) solid;
-		background-color: rgb(35, 41, 77);
+    background-color: rgb(35, 41, 77);
   }
   nav li a {
     letter-spacing: 1pt;

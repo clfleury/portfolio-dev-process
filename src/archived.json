@@ -1,0 +1,39 @@
+{
+  "portfolio": [
+    {
+      "project_num": 6,
+      "date": "2015 - 2017",
+      "project_name": "Pinterest Pins",
+      "project_cat": "Richmond American",
+      "description": "Understand the audience. As a production artist and designer, I created social media imagery with relative free reign over design elements. Using the company's existing Pinterest board as a style guide, I illustrated whimsical and textual Pins depending on the content.",
+      "image": {
+        "webp": "images/pinterest-showcase.webp",
+        "fallback": "sources/pinterest-showcase.jpg"
+      },
+      "modal_images": [
+        { "webp": "images/petpin.webp", "fallback": "sources/petpin.jpg" }
+      ]
+    },
+    {
+      "project_num": 7,
+      "date": "2016",
+      "project_name": "Marketing Collateral",
+      "project_cat": "Metzger Albee Public Relations (now Comprise)",
+      "description": "Communicate the message, and have fun doing it. Taking a sophisticated but friendly and experimental approach, my work at Metzger Albee consisted of logo design, WordPress development, and creation of new site design ideas. I also created email templates and site design updates for Metzger Albee's various clients while adhering to their existing design aesthetic.",
+      "image": {
+        "webp": "images/thrive_slide.webp",
+        "fallback": "sources/thrive_slide.jpg"
+      },
+      "modal_images": [
+        {
+          "webp": "images/prfortechies_landing.webp",
+          "fallback": "sources/prfortechies_landing.jpg"
+        },
+        {
+          "webp": "images/wwrenyolds.webp",
+          "fallback": "sources/wwrenyolds.jpg"
+        }
+      ]
+    }
+  ]
+}
