@@ -23,6 +23,10 @@
         {
           "webp": "sources/increasing-wave-amp.png",
           "fallback": "sources/increasing-wave-amp.png"
+        },
+        {
+          "webp": "sources/livecircleanimation.mp4",
+          "fallback": "sources/livecircleanimation.mp4"
         }
       ]
     },

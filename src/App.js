@@ -4,10 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LoadingIcon } from "./LoadingIcon";
 import { SiteHeaderTitle } from "./SiteHeaderTitle";
 import { Hero } from "./Hero";
-import ScrollToTop from "./scrollTop";
-
-//for local testing
-//import data from "./data.json";
+import ScrollToTop from "./scrollTop.jsx";
 
 const About = React.lazy(() => import("./About"));
 const Portfolio = React.lazy(() => import("./Portfolio"));
@@ -16,8 +13,6 @@ const Redirect = React.lazy(() => import("./Redirect"));
 class AppContainer extends React.Component {
   constructor(props) {
     super(props);
-
-    //const initialData = process.env.NODE_ENV === "development" ? data : {}; //BACKUP
 
     this.state = {
       data: {},
@@ -29,29 +24,11 @@ class AppContainer extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    // switch to relative fetch
-    /*if (process.env.NODE_ENV !== "development"){
-      fetch('https://colettefleury.com/data.json')
-      .then((response) => {
-        console.log({response})
-        return response.json();
-      }).then((siteData) => {
-        console.log({siteData})
-       data = siteData
-        this.setState({loading: false}, () => this.loadImages());
-      });
- }
-    //for local testing
-   if (process.env.NODE_ENV === "development"){
-      this.setState({ loading: false }, () => this.loadImages());
-    }*/
     fetch("data.json")
       .then((response) => {
-        console.log({ response });
         return response.json();
       })
       .then((siteData) => {
-        console.log({ siteData });
         this.setState({ loading: false, data: siteData }, () =>
           this.loadImages(),
         );
@@ -143,7 +120,7 @@ class AppContainer extends React.Component {
                 style={{ textDecoration: "none", margin: "none" }}
                 to="/"
               >
-                <SiteHeaderTitle />
+                <SiteHeaderTitle title="C\Fleury" />
               </Link>
               <ul className="right">
                 <li>

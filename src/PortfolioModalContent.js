@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { RightArrow } from "./icons/RightArrow";
 import { colors } from "./styling/colors";
-import { ModalHeader } from "./modal-header";
+import { ModalHeader } from "./modal-header.jsx";
 import { LeftArrow } from "./LeftArrow";
 
 export const PortfolioModalContent = ({
