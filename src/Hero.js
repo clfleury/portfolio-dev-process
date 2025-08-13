@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useMemo } from "react";
 
 const placeHolder =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
 
 export const Hero = ({ homebgs }) => {
-  const selectedBackground =
-    homebgs[Math.floor(Math.random() * homebgs?.length)];
+  const selectedBackground = useMemo(
+    () => homebgs[Math.floor(Math.random() * homebgs?.length)],
+    [homebgs],
+  );
+
+  console.log({ selectedBackground });
 
   return (
     <div className="centered-container">
