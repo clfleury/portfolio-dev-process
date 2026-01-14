@@ -3,6 +3,36 @@
     {
       "project_num": 0,
       "date": "2025",
+      "project_name": "Shader Visualizations",
+      "project_cat": "Personal",
+      "description": "Utilizing three.js and GLSL shaders, I created this experimental visualization series exploring the power of the GPU.",
+      "skills": ["THREE.js", "JavaScript", "GLSL", "Generative Art"],
+      "image": {
+        "webp": "sources/shader-experiments.png",
+        "fallback": "sources/shader-experiments.png"
+      },
+      "modal_feature": {
+        "webp": "sources/shader-experiments.png",
+        "fallback": "sources/shader-experiments.png"
+      },
+      "modal_images": [
+        {
+          "webp": "sources/noise-cone.mp4",
+          "fallback": "sources/noise-cone.mp4"
+        },
+        {
+          "webp": "sources/fragment-puck.mp4",
+          "fallback": "sources/fragment-puck.mp4"
+        },
+        {
+          "webp": "sources/noisy-round-object.mp4",
+          "fallback": "sources/noisy-round-object.mp4"
+        }
+      ]
+    },
+    {
+      "project_num": 1,
+      "date": "2025",
       "project_name": "Data Art Illustrations",
       "project_cat": "Personal",
       "description": "Utilizing various geometric and trigonometric techniques and mapping of data via shape and color, I created this visualization series using randomly generated numerical data with generated and image-extracted color ranges.",
@@ -31,7 +61,7 @@
       ]
     },
     {
-      "project_num": 1,
+      "project_num": 2,
       "date": "2023 - Present",
       "project_name": "Data Visualization Components",
       "project_cat": "iRacing",
@@ -64,7 +94,7 @@
       ]
     },
     {
-      "project_num": 2,
+      "project_num": 3,
       "date": "2023 - Present",
       "project_name": "Mapping Visualizations",
       "project_cat": "Personal",
@@ -90,7 +120,7 @@
       ]
     },
     {
-      "project_num": 3,
+      "project_num": 4,
       "date": "2022-2023",
       "project_name": "2D Graph Visualizations",
       "project_cat": "LogicMonitor",
@@ -110,7 +140,7 @@
       "modal_images": []
     },
     {
-      "project_num": 4,
+      "project_num": 5,
       "date": "2020-2022",
       "project_name": "Marketing Websites",
       "project_cat": "iRacing",
@@ -135,7 +165,7 @@
       ]
     },
     {
-      "project_num": 5,
+      "project_num": 6,
       "date": "2020",
       "project_name": "Booking System",
       "project_cat": "Personal",
@@ -161,7 +191,7 @@
       ]
     },
     {
-      "project_num": 6,
+      "project_num": 7,
       "date": "2018 - 2020",
       "project_name": "News Website",
       "project_cat": "NESN",
@@ -186,7 +216,7 @@
       ]
     },
     {
-      "project_num": 7,
+      "project_num": 8,
       "date": "2017 - 2018",
       "project_name": "Marketing Websites",
       "project_cat": "Sperling Interactive",
@@ -210,7 +240,7 @@
       ]
     },
     {
-      "project_num": 8,
+      "project_num": 9,
       "date": "2015 - 2017",
       "project_name": "Interactive Neighborhood Maps and Floorplans",
       "project_cat": "Richmond American",
@@ -237,7 +267,7 @@
       ]
     },
     {
-      "project_num": 9,
+      "project_num": 10,
       "date": "2015",
       "project_name": "E-Commerce Websites",
       "project_cat": "SDI Camps and Races (now Stack Sports)",
@@ -250,7 +280,7 @@
       ]
     },
     {
-      "project_num": 10,
+      "project_num": 11,
       "date": "2014",
       "project_name": "Event Posters",
       "project_cat": "University of Wyoming Campus Activities Center",
@@ -279,7 +309,7 @@
       ]
     },
     {
-      "project_num": 11,
+      "project_num": 12,
       "date": "2014",
       "project_name": "3D Campus Assets",
       "project_cat": "University of Wyoming School of Energy Resources CAVE",
