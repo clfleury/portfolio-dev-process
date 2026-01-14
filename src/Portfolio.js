@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from "react";
 import { Modal } from "./Modal.js";
-import { LoadingIcon } from "./LoadingIcon";
+import { LoadingIcon } from "./icons/LoadingIcon";
 import { PortfolioContext } from "./site-contexts";
 import * as R from "ramda";
 import { PortfolioModalContent } from "./PortfolioModalContent.js";

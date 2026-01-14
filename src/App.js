@@ -1,9 +1,11 @@
 import React from "react";
 import { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { LoadingIcon } from "./LoadingIcon";
+import { LoadingIcon } from "./icons/LoadingIcon";
 import ScrollToTop from "./scrollTop";
 import { Layout } from "./layout";
+
+// Pages
 import { Home } from "./home";
 
 const About = React.lazy(() => import("./About"));

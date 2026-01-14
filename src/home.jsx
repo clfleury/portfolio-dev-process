@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { LoadingIcon } from "./LoadingIcon";
+import { LoadingIcon } from "./icons/LoadingIcon";
 import { Hero } from "./Hero";
 
 export const Home = ({ loadImages, data, loading }) => {
