@@ -1,5 +1,4 @@
-
-$button-hover-color: rgba(255,255,255,0.2);
+$button-hover-color: rgba(255, 255, 255, 0.2);
 $button-translation: all 0.05s ease 0s;
 
 /* Font Sizes */
@@ -21,20 +20,29 @@ $padding-medium: 1rem;
 $padding-large: 2rem;
 $padding-extra-large: 4rem;
 
+/*gradients*/
+$background-gradient: -webkit-gradient(
+  linear,
+  right bottom,
+  left top,
+  from(rgba(0, 0, 0, 0.5)),
+  to(rgba(0, 0, 0, 0))
+);
+
 * {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
 }
-h1, h2, h3, h4, h5, h6, a {
-	text-transform: lowercase;
-	font-weight: 300;
-	letter-spacing: $spacing-small;
-}
-h1 {
-  font-size: $font-small;
-  strong {
-    font-size: $font-small;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: $spacing-small;
 }
 h2 {
   font-size: $font-medium;
@@ -43,24 +51,24 @@ h2 {
   }
 }
 strong {
-	font-weight: 600;
+  font-weight: 600;
 }
 hr {
-	margin-bottom: 40px;
-	border-color: #fff;
+  margin-bottom: 40px;
+  border-color: #fff;
 }
 
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-	    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-	    sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: #23294d;
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #23294d;
 }
 body.modal-open {
-	overflow: hidden;
+  overflow: hidden;
 }
 /*Resets*/
 ul {
@@ -95,13 +103,15 @@ ul li a:hover:after {
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
-img, div {
-	opacity: 1;
-	transition: opacity 0.3s;
-	transition-delay: 250ms;
+img,
+div {
+  opacity: 1;
+  transition: opacity 0.3s;
+  transition-delay: 250ms;
 }
-img[data-src], div[data-src] {
-	opacity: 0;
+img[data-src],
+div[data-src] {
+  opacity: 0;
 }
 /*Navigation Flex Grid System*/
 nav {
@@ -114,7 +124,7 @@ nav {
 }
 .scrolling-nav {
   background-color: rgb(35, 41, 77);
-  box-shadow: 0px 5px 5px rgba(0,0,0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 nav .grid-container {
   display: flex;
@@ -140,14 +150,14 @@ nav .right a {
   letter-spacing: initial;
 }
 nav li {
-	display: inline;
-	padding-right: $padding-small;
+  display: inline;
+  padding-right: $padding-small;
 }
 nav li:last-child {
-	padding-right: $padding-none;
+  padding-right: $padding-none;
 }
 nav li a {
-	text-decoration: none;
+  text-decoration: none;
 }
 nav ul svg {
   display: none;
@@ -157,7 +167,7 @@ nav ul svg {
 
 /*Generic grid system*/
 .grid {
-	display: flex;
+  display: flex;
 }
 .centered-container {
   justify-content: center;
@@ -167,7 +177,8 @@ nav ul svg {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /*Universal Fade In Animation*/
@@ -180,37 +191,37 @@ code {
 }
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -225,7 +236,7 @@ code {
 @keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -233,7 +244,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -244,7 +256,7 @@ code {
 @-moz-keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -252,7 +264,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -263,7 +276,7 @@ code {
 @-webkit-keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -271,7 +284,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -282,7 +296,7 @@ code {
 @-o-keyframes letterFadeIn {
   0% {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-opacity: 1;
     stroke-width: 8;
     stroke-miterlimit: 10;
@@ -290,7 +304,8 @@ code {
   }
   100% {
     visibility: inherit;
-    opacity: 1; transition: all 2s ease 0s;
+    opacity: 1;
+    transition: all 2s ease 0s;
     stroke-dasharray: 1867.01, 1867.01;
     stroke-dashoffset: 0;
     fill: rgb(255, 255, 255);
@@ -304,7 +319,7 @@ code {
   height: 100%;
   position: absolute;
   display: grid;
-	place-content: center;
+  place-content: center;
   .loading-icon {
     animation: rotation 2s infinite linear;
     -webkit-animation: rotation 2s infinite linear;
@@ -320,10 +335,10 @@ code {
 }
 @-webkit-keyframes rotation {
   from {
-      -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   to {
-      -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
   }
 }
 
@@ -331,21 +346,21 @@ code {
 .hero {
   height: 100vh;
   overflow-y: hidden;
-  mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
-  background-size:cover;
+  mask-image: $background-gradient;
+  background-size: cover;
   width: 100%;
   position: absolute;
 }
 .hero-secondary {
-	overflow-y: hidden;
-	mask-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
-	background-size:cover;
-	position: absolute;
-	height: 50vh;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
+  overflow-y: hidden;
+  mask-image: $background-gradient;
+  background-size: cover;
+  position: absolute;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 #svgDiv {
   max-width: 600px;
@@ -362,25 +377,27 @@ code {
 }
 .hero-content {
   h2 {
-      line-height: 0.9;
+    line-height: 0.9;
   }
 }
 .st0 {
-	visibility: inherit;
-	opacity: 1; transition: all 2s ease 0s;
-	stroke-dasharray: 1867.01, 1867.01;
-	stroke-dashoffset: 0;
-	fill: rgb(255, 255, 255);
-	stroke: transparent;
+  visibility: inherit;
+  opacity: 1;
+  transition: all 2s ease 0s;
+  stroke-dasharray: 1867.01, 1867.01;
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+  stroke: transparent;
 }
 .hero-cta {
-	margin-left: 110px;
+  margin-left: 110px;
 }
 .hero-cta h2 {
   font-size: 40pt;
   font-weight: bold;
 }
-.hero-content h2, .hero-content h3 {
+.hero-content h2,
+.hero-content h3 {
   color: #fff;
   text-align: center;
   letter-spacing: initial;
@@ -398,21 +415,21 @@ code {
   flex-wrap: wrap;
 }
 .portfolio-item {
-	position: relative;
-	width: 33%;
-	padding-bottom: 33%;
+  position: relative;
+  width: 33%;
+  padding-bottom: 33%;
 }
 .portfolio-image {
-	position: absolute;
-	left: 0;
-	top: 0;
-	cursor: pointer;
-	min-width: 100px;
-	bottom: 2px;
-	right: 2px;
-	border-radius: 20px;
-	margin: 10px;
-  overflow:hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  min-width: 100px;
+  bottom: 2px;
+  right: 2px;
+  border-radius: 20px;
+  margin: $padding-small;
+  overflow: hidden;
 }
 .portfolio-image:after {
   content: "";
@@ -422,7 +439,9 @@ code {
   position: absolute;
   top: 0px;
   width: 100%;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  transition:
+    background-color 0.2s ease 0s,
+    opacity 0.2s ease 0s;
   transition-property: background-color, opacity;
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: ease, ease;
@@ -439,7 +458,9 @@ code {
   opacity: 0;
   position: absolute;
   bottom: 0;
-  transition: opacity 0.2s ease 0s, opacity 0.2s ease 0s;
+  transition:
+    opacity 0.2s ease 0s,
+    opacity 0.2s ease 0s;
   transition-property: background-color, opacity;
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: ease, ease;
@@ -456,13 +477,13 @@ code {
 /*Modals*/
 .project-modal {
   width: 100%;
-  height: 105%;
+  height: 100vh;
   z-index: 5000;
   position: fixed;
-  background: -webkit-linear-gradient(right, #2F2F4F, #121233);
-  background: -o-linear-gradient(left, #2F2F4F, #121233);
-  background: -moz-linear-gradient(left, #2F2F4F, #121233);
-  background: linear-gradient(to left, #2F2F4F, #121233);
+  background: -webkit-linear-gradient(right, #2f2f4f, #121233);
+  background: -o-linear-gradient(left, #2f2f4f, #121233);
+  background: -moz-linear-gradient(left, #2f2f4f, #121233);
+  background: linear-gradient(to left, #2f2f4f, #121233);
   overflow: auto;
   overflow-x: hidden;
   top: 0;
@@ -476,11 +497,11 @@ code {
     float: left;
     cursor: pointer;
     path {
-    transition: $button-translation;
+      transition: $button-translation;
     }
     &:hover {
       path {
-        fill:$button-hover-color;
+        fill: $button-hover-color;
       }
     }
   }
@@ -492,32 +513,32 @@ code {
     transition: $button-translation;
     &:hover {
       path {
-        fill:$button-hover-color;
+        fill: $button-hover-color;
       }
     }
   }
   .project-modal__toggle-forwards {
-    float: right; 
+    float: right;
     margin: 30px;
     margin-right: 8px;
     cursor: pointer;
     transition: $button-translation;
     &:hover {
       path {
-        fill:$button-hover-color;
+        fill: $button-hover-color;
       }
     }
   }
 }
 .featured-image {
-  margin-left: 5.5%;
+  //margin-left: 5.5%;
   height: 550px;
   width: 130%;
   background-size: cover;
 }
 .project-modal img {
   display: block;
-  max-width: 800px;
+  max-width: 100%;
   margin: 20px 0px;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -531,21 +552,23 @@ code {
   padding: $padding-large $padding-extra-large $padding-medium;
   margin: $padding-extra-large auto $padding-none auto;
   max-width: 50rem;
+  border-radius: 20px;
 }
 .portfolio-style {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
   margin-left: 10%;
-	background-color: #23294d;
-	margin-left: calc(15% - 30px);
+  background-color: #23294d;
+  margin-left: calc(15% - 30px);
   padding: 30px;
+  border-radius: 20px;
 }
 
 /*About*/
 .page-title {
-	letter-spacing: 5pt;
-	font-size: $font-large;
+  letter-spacing: 5pt;
+  font-size: $font-large;
   margin-top: $padding-extra-large;
 }
 .page-title strong {
@@ -561,14 +584,14 @@ p {
   font-weight: 500;
   line-height: $line-height-medium;
 }
-@media all and (max-width: 1150px){
+@media all and (max-width: 1150px) {
   .portfolio-item {
     position: relative;
     width: 50%;
     padding-bottom: 50%;
   }
 }
-@media all and (max-width: 800px){
+@media all and (max-width: 800px) {
   p {
     font-size: $font-small;
     line-height: 34px;
@@ -602,10 +625,10 @@ p {
   nav .right li {
     width: 50%;
   }
-	nav .right a {
-		text-transform: lowercase;
-		letter-spacing: 1pt;
-	}
+  nav .right a {
+    text-transform: lowercase;
+    letter-spacing: 1pt;
+  }
   nav ul svg {
     fill: #fff;
     width: 100%;
@@ -618,7 +641,7 @@ p {
     font-size: 11.5px;
     text-align: center;
     border: 1px rgba(186, 203, 255, 0.18) solid;
-		background-color: rgb(35, 41, 77);
+    background-color: rgb(35, 41, 77);
   }
   nav li a {
     letter-spacing: 1pt;
@@ -634,7 +657,7 @@ p {
   .hero-cta {
     margin-left: 0;
     h2 {
-    font-size: 25pt;
+      font-size: 25pt;
     }
     h3 {
       font-size: 15pt;
@@ -655,7 +678,7 @@ p {
     max-width: 100%;
   }
   .featured-image {
-    margin-left: 5.5%;
+    //margin-left: 5.5%;
     height: 550px;
     width: 100%;
     background-size: cover;
@@ -672,12 +695,12 @@ p {
 * {
   font-size: 1vw;
 }
-@media all and (max-width: 1150px){
+@media all and (max-width: 1150px) {
   * {
     font-size: 1.7vw;
   }
 }
-@media all and (max-width: 800px){
+@media all and (max-width: 800px) {
   * {
     font-size: 4vw;
   }

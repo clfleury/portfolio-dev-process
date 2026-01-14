@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { RightArrow } from "./icons/RightArrow";
+import { colors } from "./styling/colors";
+import { ModalHeader } from "./modal-header.jsx";
+import { LeftArrow } from "./LeftArrow";
 
 export const PortfolioModalContent = ({
   data,
@@ -22,6 +25,9 @@ export const PortfolioModalContent = ({
     } else {
       setCurrentProjectNum(0);
     }
+    const modalDiv = document.getElementById("project-modal");
+    modalDiv.scrollTop = 0;
+    //window.scrollTo(0, 0);
   };
 
   const toggleProjectsBackward = () => {
@@ -30,88 +36,56 @@ export const PortfolioModalContent = ({
     } else {
       setCurrentProjectNum(portfolio.length - 1);
     }
+    const modalDiv = document.getElementById("project-modal");
+    modalDiv.scrollTop = 0;
+    //window.scrollTo(0, 0);
   };
+
+  const featuredImage = portfolio[currentProjectNum].hasOwnProperty(
+    "modal_feature",
+  )
+    ? portfolio[currentProjectNum].modal_feature
+    : portfolio[currentProjectNum].image;
 
   return (
     <>
       {isModalOpen && (
         <>
-          <div
-            className="project-modal__toggle-backwards"
-            onClick={toggleProjectsForward}
-          >
-            <RightArrow />
-          </div>
-          <div
-            className="project-modal__toggle-forwards"
-            onClick={toggleProjectsBackward}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+          <div style={{ position: "fixed", display: "block", right: 0 }}>
+            <div
+              className="project-modal__toggle-backwards"
+              onClick={toggleProjectsForward}
             >
-              <path d="M11,23l2.8-2.8L7.6,14H24v-4H7.6l6.2-6.2L11,1L0,12L11,23z" />
-            </svg>
+              <RightArrow />
+            </div>
+            <div
+              className="project-modal__toggle-forwards"
+              onClick={toggleProjectsBackward}
+            >
+              <LeftArrow />
+            </div>
           </div>
           <div className="content">
-          <h4
-              className="fade-in"
-              style={{
-                color: "#ffffff",
-                clear: "both",
-                userSelect: "none",
-                fontStyle: "italic",
-                fontWeight: "bold",
-                lineHeight: "0",
-              }}
-            >
-              {portfolio[currentProjectNum].project_cat && portfolio[currentProjectNum].project_cat}
-            </h4>
-            <h2
-              className="fade-in"
-              style={{
-                color: "#ffffff",
-                clear: "both",
-                userSelect: "none",
-                lineHeight: 0.8
-              }}
-            >
-              {portfolio[currentProjectNum].project_name}
-            </h2>
-            <h3
-              className="fade-in"
-              style={{
-                color: "#ffffff",
-                clear: "both",
-                lineHeight: "0",
-                paddingBottom: "40px",
-                userSelect: "none",
-              }}
-            >
-              {portfolio[currentProjectNum].date}
-            </h3>
+            <ModalHeader
+              projectCategory={portfolio[currentProjectNum].project_cat}
+              projectName={portfolio[currentProjectNum].project_name}
+              projectDate={portfolio[currentProjectNum].date}
+            />
             <div
               className="fade-in featured-image"
-              style={
-                document.documentElement.classList.contains("webp")
-                  ? {
-                      backgroundImage:
-                        "url(" + portfolio[currentProjectNum].image.webp + ")",
-                    }
-                  : {
-                      backgroundImage:
-                        "url(" +
-                        portfolio[currentProjectNum].image.fallback +
-                        ")",
-                    }
-              }
+              style={{
+                borderRadius: "20px",
+                backgroundImage: document.documentElement.classList.contains(
+                  "webp",
+                )
+                  ? "url(" + featuredImage.webp + ")"
+                  : "url(" + featuredImage.fallback + ")",
+              }}
             ></div>
             <p
               className="fade-in"
               style={{
-                color: "#ffffff",
+                color: colors.white,
                 clear: "both",
                 padding: "40px 0px 20px 0px",
               }}
@@ -127,18 +101,51 @@ export const PortfolioModalContent = ({
               alt="project detail"
               className="fade-in"
             />
+            <div
+              style={{
+                padding: "40px",
+              }}
+            >
+              <h5
+                style={{
+                  textAlign: "center",
+                  lineHeight: 0,
+                  marginBottom: 0,
+                }}
+              >
+                <strong>Skills</strong>
+              </h5>
+              <p style={{ textAlign: "center" }}>
+                {portfolio[currentProjectNum].skills?.map((item, i) => (
+                  <span key={i}>
+                    {item}
+                    {i !== portfolio[currentProjectNum].skills.length - 1
+                      ? "  •  "
+                      : ""}
+                  </span>
+                ))}
+              </p>
+            </div>
             {data.portfolio[currentProjectNum].modal_images.map((data, key) => {
               var dataImg;
               document.documentElement.classList.contains("webp")
                 ? (dataImg = data.webp)
                 : (dataImg = data.fallback);
               return (
-                <img
-                  src={dataImg}
-                  key={key}
-                  alt="project-detail"
-                  className="fade-in"
-                />
+                <>
+                  {dataImg.includes("mp4") ? (
+                    <video width="100%" autoPlay={true} loop key={dataImg}>
+                      <source src={dataImg} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img
+                      src={dataImg}
+                      key={key}
+                      alt="project-detail"
+                      className="fade-in"
+                    />
+                  )}
+                </>
               );
             })}
           </div>

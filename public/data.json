@@ -1,0 +1,349 @@
+{
+  "portfolio": [
+    {
+      "project_num": 0,
+      "date": "2025",
+      "project_name": "Data Art Illustrations",
+      "project_cat": "Personal",
+      "description": "Utilizing various geometric and trigonometric techniques and mapping of data via shape and color, I created this visualization series using randomly generated numerical data with generated and image-extracted color ranges.",
+      "skills": ["HTML5 Canvas", "JavaScript", "Generative Art"],
+      "image": {
+        "webp": "sources/coolfun6.png",
+        "fallback": "sources/coolfun6.png"
+      },
+      "modal_feature": {
+        "webp": "sources/coolfun6.png",
+        "fallback": "sources/coolfun6.png"
+      },
+      "modal_images": [
+        { "webp": "sources/coolfun.png", "fallback": "sources/coolfun.png" },
+        { "webp": "sources/auto-gen.mp4", "fallback": "sources/auto-gen.mp4" },
+        { "webp": "sources/coolfun4.png", "fallback": "sources/coolfun4.png" },
+        { "webp": "sources/coolfun5.png", "fallback": "sources/coolfun5.png" },
+        {
+          "webp": "sources/increasing-wave-amp.png",
+          "fallback": "sources/increasing-wave-amp.png"
+        },
+        {
+          "webp": "sources/livecircleanimation.mp4",
+          "fallback": "sources/livecircleanimation.mp4"
+        }
+      ]
+    },
+    {
+      "project_num": 1,
+      "date": "2023 - Present",
+      "project_name": "Data Visualization Components",
+      "project_cat": "iRacing",
+      "skills": [
+        "Apache eCharts",
+        "TypeScript",
+        "Redux Toolkit",
+        "Interaction Design",
+        "Chakra UI",
+        "Design Systems"
+      ],
+      "description": "Nothing tells a story quite like a graph. In my role at iRacing, I took the lead in building out an expansive data visualization component system utilizing Apache eCharts, as well as its implementation in our UI application. This role has required intricate understanding of RTK Query data fetching techniques, the data mapping process and its relation to discrete mathematics, principles of visualization and interaction design, and the algorithms that underly the eCharts rendering process.",
+      "image": {
+        "webp": "sources/confidence-band.png",
+        "fallback": "sources/confidence-band.png"
+      },
+      "modal_feature": {
+        "webp": "sources/confidence-band.png",
+        "fallback": "sources/confidence-band.png"
+      },
+      "modal_images": [
+        {
+          "webp": "sources/with-labels.png",
+          "fallback": "sources/with-labels.png"
+        },
+        {
+          "webp": "sources/bumpchart-example.mp4",
+          "fallback": "sources/bumpchart-example.mp4"
+        }
+      ]
+    },
+    {
+      "project_num": 2,
+      "date": "2023 - Present",
+      "project_name": "Mapping Visualizations",
+      "project_cat": "Personal",
+      "description": "Teach and learn. In my spare time I experiment with D3.js, Blender, and QGIS pipelines to create visualizations and applications that facilitate learning about ecological topics.",
+      "skills": ["D3", "JavaScript", "Interaction Design", "qGIS", "Blender"],
+      "image": {
+        "webp": "sources/greatimes.gif",
+        "fallback": "sources/greatimes.gif"
+      },
+      "modal_images": [
+        {
+          "webp": "images/ecoregions.jpg",
+          "fallback": "images/ecoregions.jpg"
+        },
+        {
+          "webp": "sources/southdakota-ecoregion.mp4",
+          "fallback": "sources/southdakota-ecoregion.mp4"
+        },
+        {
+          "webp": "sources/orig-prebake2.png",
+          "fallback": "sources/orig-prebake2.png"
+        }
+      ]
+    },
+    {
+      "project_num": 3,
+      "date": "2022-2023",
+      "project_name": "2D Graph Visualizations",
+      "project_cat": "LogicMonitor",
+      "description": "An interactive picture is worth a million words. As a UI engineer for LogicMonitor, I built out various specs for interactive line graphs based on provided user stories and static mocks. These graphs show users various detailed transformations of the data to help them better understand underlying trends, such as line of best fit, anomaly detection, and forecasting algorithms. I also contributed to other chart development, such as pie charts, and worked on various bugs to support the broader system. For proprietary reasons, I am only showing a simplified version of the product.",
+      "skills": [
+        "Highcharts",
+        "Ramda",
+        "JavaScript",
+        "React",
+        "Statistical Algorithms",
+        "Interaction Design"
+      ],
+      "image": {
+        "webp": "sources/examplegraphsimple.jpg",
+        "fallback": "sources/examplegraphsimple.jpg"
+      },
+      "modal_images": []
+    },
+    {
+      "project_num": 4,
+      "date": "2020-2022",
+      "project_name": "Marketing Websites",
+      "project_cat": "iRacing",
+      "description": "Build reusable systems. As a developer for iRacing, I refactored their existing WordPress codebase to improve reusability by utilizing the Gutenberg block editor. I created several dynamic blocks that could be configured in a code-free environment by our in-house designer to match his artistic vision. I also designed and developed static site modules and a live-streaming video platform that allowed more robust searching and browsing than its previous iteration in React.",
+      "skills": [
+        "WordPress",
+        "Gutenberg",
+        "React",
+        "JavaScript",
+        "SASS",
+        "Responsive Design"
+      ],
+      "image": {
+        "webp": "images/iracing-public.jpg",
+        "fallback": "images/iracing-public.jpg"
+      },
+      "modal_images": [
+        {
+          "webp": "images/iracing-public-2.jpg",
+          "fallback": "images/iracing-public-2.jpg"
+        }
+      ]
+    },
+    {
+      "project_num": 5,
+      "date": "2020",
+      "project_name": "Booking System",
+      "project_cat": "Personal",
+      "description": "Practice never makes perfect. Creating this booking system was a fun way to expand outside my technical and design comfort zone. I built the initial wireframes and mockups in Adobe XD, then moved to build out a front-end example implementation using React, which allowed for easy state propagation across design elements.",
+      "skills": ["React", "Adobe XD", "JavaScript", "Design Systems"],
+      "image": {
+        "webp": "images/booking-mock-1.webp",
+        "fallback": "sources/booking-mock-1.jpg"
+      },
+      "modal_images": [
+        {
+          "webp": "images/booking-mock-2.webp",
+          "fallback": "sources/booking-mock-2.jpg"
+        },
+        {
+          "webp": "images/booking-mock-3.webp",
+          "fallback": "sources/booking-mock-3.jpg"
+        },
+        {
+          "webp": "images/booking-mock-5.webp",
+          "fallback": "sources/booking-mock-5.jpg"
+        }
+      ]
+    },
+    {
+      "project_num": 6,
+      "date": "2018 - 2020",
+      "project_name": "News Website",
+      "project_cat": "NESN",
+      "description": "Without the user, we are nothing. As one of only two developers for the nesn.com website, I utilized a modular design approach to update the site's design while considering known design principles and collecting internal feedback. I also contributed to the site's object-oriented codebase to create new functionality for internal stakeholders.",
+      "skills": [
+        "Adobe XD",
+        "JavaScript",
+        "WordPress",
+        "Interaction Design",
+        "Information Architecture",
+        "UX Design"
+      ],
+      "image": {
+        "webp": "images/4k-landing.webp",
+        "fallback": "images/4k-landing.jpg"
+      },
+      "modal_images": [
+        {
+          "webp": "images/nesnmobilemenu.webp",
+          "fallback": "sources/nesnmobilemenu.jpg"
+        }
+      ]
+    },
+    {
+      "project_num": 7,
+      "date": "2017 - 2018",
+      "project_name": "Marketing Websites",
+      "project_cat": "Sperling Interactive",
+      "description": "Teamwork makes the dreamwork. I worked on a variety of projects for Sperling with varying degrees of responsibility in design and development. When tasked with design, I thought through the site's information architecture, adhered to client brand standards, and created wireframes and mockups with UX principles in mind. When tasked with development of another designer's mockup, I ensured that the project adhered to their vision while limiting code complexity and adhering to WordPress and team standards.",
+      "image": {
+        "webp": "sources/aspen-screen.jpg",
+        "fallback": "sources/aspen-screen.jpg"
+      },
+      "skills": [
+        "Adobe Illustrator",
+        "JavaScript",
+        "WordPress",
+        "Information Architecture",
+        "Interaction Design"
+      ],
+      "modal_images": [
+        {
+          "webp": "sources/gooddemotimes.mp4",
+          "fallback": "sources/gooddemotimes.mp4"
+        }
+      ]
+    },
+    {
+      "project_num": 8,
+      "date": "2015 - 2017",
+      "project_name": "Interactive Neighborhood Maps and Floorplans",
+      "project_cat": "Richmond American",
+      "description": "Interactive maps and visuals can speed up the decision-making process and make for a better customer experience. As a contracted production artist and designer for Richmond American Homes, I assisted with the development process of home and neighborhood maps, which gave website users and showroom visitors detailed overviews of product options and site features. This helped our customers to make informed decisions about the home and neighborhood they wished to live in. I was able to significantly speed up production of these visualizations by developing automation scripts while in this role, ensuring that the various neighborhood developments received visuals for potential customers to review in a timely manner.",
+      "image": {
+        "webp": "sources/examplefloorplansquare.gif",
+        "fallback": "sources/examplefloorplansquare.gif"
+      },
+      "modal_feature": {
+        "webp": "sources/examplefloorplan.gif",
+        "fallback": "sources/examplefloorplan.gif"
+      },
+      "skills": [
+        "Adobe Illustrator",
+        "JavaScript",
+        "Interaction Design",
+        "Scalable Vector Graphics"
+      ],
+      "modal_images": [
+        {
+          "webp": "sources/examplefloorplan.gif",
+          "fallback": "sources/examplefloorplan.gif"
+        }
+      ]
+    },
+    {
+      "project_num": 9,
+      "date": "2015",
+      "project_name": "E-Commerce Websites",
+      "project_cat": "SDI Camps and Races (now Stack Sports)",
+      "description": "Build a baseline. Using a well-defined structural approach to building unique designs, as an intern I utilized the Foundation Framework, jQuery, and an existing PHP framework provided by our lovely dev team to quickly and creatively experiment with assets to show potential clients. I also utilized this approach to build and launch a unique site design for a subscribed client within two weeks.",
+      "skills": ["PHP", "JavaScript", "CSS", "Responsive Design"],
+      "image": { "webp": "images/proto.webp", "fallback": "sources/proto.jpg" },
+      "modal_images": [
+        { "webp": "images/test2.webp", "fallback": "sources/test2.jpg" },
+        { "webp": "images/test3.webp", "fallback": "sources/test3.jpg" }
+      ]
+    },
+    {
+      "project_num": 10,
+      "date": "2014",
+      "project_name": "Event Posters",
+      "project_cat": "University of Wyoming Campus Activities Center",
+      "description": "Stand out by pushing boundaries, and don't be afraid of color! In my student graphic and web design role, I created posters utilizing a variety of technical methods and styles to encourage visual diversity on the campus bulletin boards and appeal to different audiences. I also updated the Union microsite with event and program information, and created video-based digital signs to attract Union visitors' attention with movement.",
+      "image": {
+        "webp": "images/showcase1.webp",
+        "fallback": "sources/showcase1.jpg"
+      },
+      "skills": [
+        "Graphic Design",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Adobe Premiere",
+        "HTML",
+        "CSS"
+      ],
+      "modal_images": [
+        {
+          "webp": "images/ghana-on-wall.webp",
+          "fallback": "sources/ghana-on-wall.jpg"
+        },
+        {
+          "webp": "sources/videostyles5.mp4",
+          "fallback": "sources/videostyles5.mp4"
+        }
+      ]
+    },
+    {
+      "project_num": 11,
+      "date": "2014",
+      "project_name": "3D Campus Assets",
+      "project_cat": "University of Wyoming School of Energy Resources CAVE",
+      "description": "We are all creative, and we are all technical. My eagerness to learn new tricks lead me to explore 3D modeling as an intern for Wyoming's CAVE visualization environment. I assisted in building a realistic rendering of campus by contribuing buildings, textures, and objects to the cause. I also took advantage of my access to the environment and created my own personal project around restructuring parts of campus in the name of improved urban design!",
+      "image": {
+        "webp": "sources/3d-animation.gif",
+        "fallback": "sources/3d-animation.gif"
+      },
+      "skills": ["3D Modeling", "3D Texturing", "Unity", "Modo", "Blender"],
+      "modal_feature": {
+        "webp": "images/tables.webp",
+        "fallback": "sources/tables.jpg"
+      },
+      "modal_images": [
+        { "webp": "images/table.webp", "fallback": "sources/table.png" },
+        { "webp": "images/tables.webp", "fallback": "sources/tables.jpg" },
+        {
+          "webp": "images/campusmodel.webp",
+          "fallback": "sources/campusmodel.jpg"
+        },
+        { "webp": "images/cave.webp", "fallback": "sources/cave.jpg" }
+      ]
+    }
+  ],
+  "about": [
+    "Hi there! My name is Colette, welcome to my portfolio site! I am a digital engineer with a design background specializing in visualization, interactivity, and front-end programming.",
+    "I was always described as artistic and technically savvy in grade school, and my love of the arts, as well as my interest in computer science and business, led me to explore a career in digital design. I attended the University of Wyoming and received a Bachelors of Arts with a Graphic Design emphasis, where I developed various abilities in art and design.",
+    "Curious about how websites and other user interfaces worked in addition to how they looked and felt, I chose to hybridize my career as a designer by learning more about web programming. After graduating, I interned and contracted as a web designer, web developer, production artist, and interactive designer in Denver. I then worked full time in Boston as a web designer and developer while completing a Master of Science in Information and Communications Technology through the University of Denver.",
+    "Over the years, my interests in digital user interfaces and their varying levels of complexity have evolved, leading me to a current emphasis in data visualization and mapping and how these interface types relate to the human learning experience. My most recent professional experience revolves around building data visualization components in React."
+  ],
+  "homebgs": [
+    {
+      "webp": "images/abstraction.webp",
+      "fallback": "sources/abstraction.jpg"
+    },
+    {
+      "webp": "sources/generative-art.jpg",
+      "fallback": "sources/generative-art.jpg"
+    },
+    {
+      "webp": "sources/spiral-friends.png",
+      "fallback": "sources/spiral-friends.png"
+    },
+    {
+      "webp": "sources/fun-spirals.png",
+      "fallback": "sources/fun-spirals.png"
+    },
+    {
+      "webp": "sources/sparse-spiral.png",
+      "fallback": "sources/sparse-spiral.png"
+    },
+    {
+      "webp": "sources/increasing-wave-amp.png",
+      "fallback": "sources/increasing-wave-amp.png"
+    },
+    {
+      "webp": "sources/oldneighborhooddiagram.png",
+      "fallback": "sources/oldneighborhooddiagram.png"
+    },
+    { "webp": "sources/coolfun.png", "fallback": "sources/coolfun.png" },
+    {
+      "webp": "sources/goodtimes.png",
+      "fallback": "sources/goodtimes.png",
+      "custom_gradient": "linear-gradient(  hsl(0, 0%, 0%) 0%,  hsla(0, 0%, 0%, 0.738) 19%,  hsla(0, 0%, 0%, 0.541) 34%,  hsla(0, 0%, 0%, 0.382) 47%,  hsla(0, 0%, 0%, 0.278) 56.5%,  hsla(0, 0%, 0%, 0.194) 65%,  hsla(0, 0%, 0%, 0.126) 73%,  hsla(0, 0%, 0%, 0.075) 80.2%,  hsla(0, 0%, 0%, 0.042) 86.1%,  hsla(0, 0%, 0%, 0.021) 91%,  hsla(0, 0%, 0%, 0.008) 95.2%,  hsla(0, 0%, 0%, 0.002) 98.2%,  hsla(0, 0%, 0%, 0) 100%)"
+    }
+  ]
+}

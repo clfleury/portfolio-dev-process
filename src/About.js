@@ -1,5 +1,4 @@
 import React from "react";
-import { data } from "./App.js";
 import { LoadingIcon } from "./LoadingIcon";
 
 export default class About extends React.Component {
@@ -14,25 +13,24 @@ export default class About extends React.Component {
               className="hero-secondary"
               style={{
                 backgroundImage: document.documentElement.classList.contains(
-                  "webp"
+                  "webp",
                 )
                   ? "url(" +
-                    data.homebgs[
-                      Math.floor(Math.random() * data.homebgs.length)
+                    this.props.data.homebgs[
+                      Math.floor(Math.random() * this.props.data.homebgs.length)
                     ].webp +
                     ")"
                   : "url(" +
-                    data.homebgs[
-                      Math.floor(Math.random() * data.homebgs.length)
+                    this.props.data.homebgs[
+                      Math.floor(Math.random() * this.props.data.homebgs.length)
                     ].fallback +
                     ")",
               }}
             ></div>
             <div className="content">
               <h2 className="page-title">
-                ABOUT<strong>\ME</strong>
+                ABOUT<strong>•ME</strong>
               </h2>
-              <hr />
             </div>
             <div
               className="content"
@@ -42,7 +40,7 @@ export default class About extends React.Component {
                 paddingTop: "20px",
               }}
             >
-              {data.about.map(function (data, key) {
+              {this.props.data.about.map(function (data, key) {
                 return <p key={key}>{data}</p>;
               }, this)}
             </div>

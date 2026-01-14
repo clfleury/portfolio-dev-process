@@ -1,12 +1,11 @@
 import React, { useState, useLayoutEffect } from "react";
-import { data } from "./App.js";
 import { Modal } from "./Modal.js";
 import { LoadingIcon } from "./LoadingIcon";
 import { PortfolioContext } from "./site-contexts";
 import * as R from "ramda";
 import { PortfolioModalContent } from "./PortfolioModalContent.js";
 
-const ProjectList = () => {
+const ProjectList = ({ data }) => {
   const [currentProject, setCurrentProject] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -79,6 +78,18 @@ class ProjectItem extends React.Component {
           }}
         >
           <div className="display-name">
+            <p
+              style={{
+                fontStyle: "italic",
+                fontWeight: "bold",
+                fontSize: "1rem",
+                color: "#23294d",
+                lineHeight: "1.3rem",
+                textAlign: "left",
+              }}
+            >
+              {this.props.projectData.project_cat}
+            </p>
             {this.props.projectData.project_name}
           </div>
         </div>
@@ -103,29 +114,26 @@ export default class Portfolio extends React.Component {
               className="hero-secondary"
               style={{
                 backgroundImage: document.documentElement.classList.contains(
-                  "webp"
+                  "webp",
                 )
                   ? "url(" +
-                    data.homebgs[
-                      Math.floor(Math.random() * data.homebgs.length)
+                    this.props.data.homebgs[
+                      Math.floor(Math.random() * this.props.data.homebgs.length)
                     ].webp +
                     ")"
                   : "url(" +
-                    data.homebgs[
-                      Math.floor(Math.random() * data.homebgs.length)
+                    this.props.data.homebgs[
+                      Math.floor(Math.random() * this.props.data.homebgs.length)
                     ].fallback +
                     ")",
               }}
             ></div>
-            <div
-              className="content"
-            >
+            <div className="content">
               <h2 className="page-title">
-                My<strong>\Work</strong>
+                My<strong>•Work</strong>
               </h2>
-              <hr />
             </div>
-            <ProjectList />
+            <ProjectList data={this.props.data} />
           </div>
         )}
       </div>
