@@ -26,7 +26,7 @@ module.exports = {
       },
     ],
   },
-  resolve: { extensions: ["*", ".js"] },
+  resolve: { extensions: [".*", ".wasm", ".mjs", ".js", ".jsx", ".json"] },
   devServer: {
     // contentBase
     static: {
