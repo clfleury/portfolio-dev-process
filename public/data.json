@@ -46,8 +46,11 @@
         "fallback": "sources/coolfun6.png"
       },
       "modal_images": [
-        { "webp": "sources/coolfun.png", "fallback": "sources/coolfun.png" },
         { "webp": "sources/auto-gen.mp4", "fallback": "sources/auto-gen.mp4" },
+        {
+          "webp": "sources/spiral-fun.mp4",
+          "fallback": "sources/spiral-fun.mp4"
+        },
         { "webp": "sources/coolfun4.png", "fallback": "sources/coolfun4.png" },
         { "webp": "sources/coolfun5.png", "fallback": "sources/coolfun5.png" },
         {
