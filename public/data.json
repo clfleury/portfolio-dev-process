@@ -8,11 +8,11 @@
       "description": "Utilizing three.js and GLSL shaders, I created this experimental visualization series exploring the power of the GPU.",
       "skills": ["THREE.js", "JavaScript", "GLSL", "Generative Art"],
       "image": {
-        "webp": "sources/shader-experiments.png",
+        "webp": "images/shader-experiments.webp",
         "fallback": "sources/shader-experiments.png"
       },
       "modal_feature": {
-        "webp": "sources/shader-experiments.png",
+        "webp": "images/shader-experiments.webp",
         "fallback": "sources/shader-experiments.png"
       },
       "modal_images": [
@@ -38,11 +38,11 @@
       "description": "Utilizing various geometric and trigonometric techniques and mapping of data via shape and color, I created this visualization series using randomly generated numerical data with generated and image-extracted color ranges.",
       "skills": ["HTML5 Canvas", "JavaScript", "Generative Art"],
       "image": {
-        "webp": "sources/coolfun6.png",
+        "webp": "images/coolfun6.webp",
         "fallback": "sources/coolfun6.png"
       },
       "modal_feature": {
-        "webp": "sources/coolfun6.png",
+        "webp": "images/coolfun6.webp",
         "fallback": "sources/coolfun6.png"
       },
       "modal_images": [
@@ -51,10 +51,10 @@
           "webp": "sources/spiral-fun.mp4",
           "fallback": "sources/spiral-fun.mp4"
         },
-        { "webp": "sources/coolfun4.png", "fallback": "sources/coolfun4.png" },
-        { "webp": "sources/coolfun5.png", "fallback": "sources/coolfun5.png" },
+        { "webp": "images/coolfun4.webp", "fallback": "sources/coolfun4.png" },
+        { "webp": "images/coolfun5.webp", "fallback": "sources/coolfun5.png" },
         {
-          "webp": "sources/increasing-wave-amp.png",
+          "webp": "images/increasing-wave-amp.webp",
           "fallback": "sources/increasing-wave-amp.png"
         },
         {
@@ -78,16 +78,16 @@
       ],
       "description": "Nothing tells a story quite like a graph. In my role at iRacing, I took the lead in building out an expansive data visualization component system utilizing Apache eCharts, as well as its implementation in our UI application. This role has required intricate understanding of RTK Query data fetching techniques, the data mapping process and its relation to discrete mathematics, principles of visualization and interaction design, and the algorithms that underly the eCharts rendering process.",
       "image": {
-        "webp": "sources/confidence-band.png",
+        "webp": "images/confidence-band.webp",
         "fallback": "sources/confidence-band.png"
       },
       "modal_feature": {
-        "webp": "sources/confidence-band.png",
+        "webp": "images/confidence-band.webp",
         "fallback": "sources/confidence-band.png"
       },
       "modal_images": [
         {
-          "webp": "sources/with-labels.png",
+          "webp": "images/with-labels.webp",
           "fallback": "sources/with-labels.png"
         },
         {
@@ -117,7 +117,7 @@
           "fallback": "sources/southdakota-ecoregion.mp4"
         },
         {
-          "webp": "sources/orig-prebake2.png",
+          "webp": "images/orig-prebake2.webp",
           "fallback": "sources/orig-prebake2.png"
         }
       ]
@@ -137,7 +137,7 @@
         "Interaction Design"
       ],
       "image": {
-        "webp": "sources/examplegraphsimple.jpg",
+        "webp": "images/examplegraphsimple.webp",
         "fallback": "sources/examplegraphsimple.jpg"
       },
       "modal_images": []
@@ -225,7 +225,7 @@
       "project_cat": "Sperling Interactive",
       "description": "Teamwork makes the dreamwork. I worked on a variety of projects for Sperling with varying degrees of responsibility in design and development. When tasked with design, I thought through the site's information architecture, adhered to client brand standards, and created wireframes and mockups with UX principles in mind. When tasked with development of another designer's mockup, I ensured that the project adhered to their vision while limiting code complexity and adhering to WordPress and team standards.",
       "image": {
-        "webp": "sources/aspen-screen.jpg",
+        "webp": "images/aspen-screen.webp",
         "fallback": "sources/aspen-screen.jpg"
       },
       "skills": [
@@ -349,32 +349,32 @@
       "fallback": "sources/abstraction.jpg"
     },
     {
-      "webp": "sources/generative-art.jpg",
+      "webp": "images/generative-art.webp",
       "fallback": "sources/generative-art.jpg"
     },
     {
-      "webp": "sources/spiral-friends.png",
+      "webp": "images/spiral-friends.webp",
       "fallback": "sources/spiral-friends.png"
     },
     {
-      "webp": "sources/fun-spirals.png",
+      "webp": "images/fun-spirals.webp",
       "fallback": "sources/fun-spirals.png"
     },
     {
-      "webp": "sources/sparse-spiral.png",
+      "webp": "images/sparse-spiral.webp",
       "fallback": "sources/sparse-spiral.png"
     },
     {
-      "webp": "sources/increasing-wave-amp.png",
+      "webp": "images/increasing-wave-amp.webp",
       "fallback": "sources/increasing-wave-amp.png"
     },
     {
-      "webp": "sources/oldneighborhooddiagram.png",
+      "webp": "images/oldneighborhooddiagram.webp",
       "fallback": "sources/oldneighborhooddiagram.png"
     },
-    { "webp": "sources/coolfun.png", "fallback": "sources/coolfun.png" },
+    { "webp": "images/coolfun.webp", "fallback": "sources/coolfun.png" },
     {
-      "webp": "sources/goodtimes.png",
+      "webp": "images/goodtimes.webp",
       "fallback": "sources/goodtimes.png",
       "custom_gradient": "linear-gradient(  hsl(0, 0%, 0%) 0%,  hsla(0, 0%, 0%, 0.738) 19%,  hsla(0, 0%, 0%, 0.541) 34%,  hsla(0, 0%, 0%, 0.382) 47%,  hsla(0, 0%, 0%, 0.278) 56.5%,  hsla(0, 0%, 0%, 0.194) 65%,  hsla(0, 0%, 0%, 0.126) 73%,  hsla(0, 0%, 0%, 0.075) 80.2%,  hsla(0, 0%, 0%, 0.042) 86.1%,  hsla(0, 0%, 0%, 0.021) 91%,  hsla(0, 0%, 0%, 0.008) 95.2%,  hsla(0, 0%, 0%, 0.002) 98.2%,  hsla(0, 0%, 0%, 0) 100%)"
     }

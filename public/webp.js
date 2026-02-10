@@ -1,20 +1,27 @@
-/*const imagemin = require("imagemin");
-const webp = require("imagemin-webp");
-
-imagemin(["sources/*.png"], "images", {
-  use: [
-    webp({
-      quality: 75
-    })
-  ]
-}).then(function() {
-  console.log("Images converted!");
-});*/
-
 const imagemin = require("imagemin");
 const imageminWebp = require("imagemin-webp");
 
-imagemin(["sources/*.{jpg,png}"], {
+/*imagemin(["sources/*.jpg"], "images", {
+  use: [
+    webp({
+      quality: 75,
+    }),
+  ],
+}).then(function () {
+  console.log("Images converted!");
+});*/
+
+imagemin(["public/sources/*.{jpg,png}"], {
+  destination: "public/images",
+  plugins: [imageminWebp({ quality: 50 })],
+}).then(function () {
+  console.log("Images converted!");
+});
+
+/*const imagemin = require("imagemin");
+const imageminWebp = require("imagemin-webp");*/
+
+/*imagemin(["sources/*.{jpg,png}"], {
   destination: __dirname + "/images/",
   plugins: [
     imageminWebp({
@@ -23,4 +30,4 @@ imagemin(["sources/*.{jpg,png}"], {
   ],
 }).then(() => {
   console.log("Images optimized");
-});
+});*/

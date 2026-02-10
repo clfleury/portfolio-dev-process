@@ -24,7 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
-    "build": "webpack build --mode development"
+    "build": "webpack build --mode development",
+    "webp": "node public/webp.js"
   },
   "eslintConfig": {
     "extends": "react-app"
