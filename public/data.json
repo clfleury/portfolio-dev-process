@@ -157,13 +157,13 @@
         "Responsive Design"
       ],
       "image": {
-        "webp": "images/iracing-public.jpg",
-        "fallback": "images/iracing-public.jpg"
+        "webp": "images/iracing-public.webp",
+        "fallback": "sources/iracing-public.jpg"
       },
       "modal_images": [
         {
-          "webp": "images/iracing-public-2.jpg",
-          "fallback": "images/iracing-public-2.jpg"
+          "webp": "images/iracing-public-2.webp",
+          "fallback": "sources/iracing-public-2.jpg"
         }
       ]
     },

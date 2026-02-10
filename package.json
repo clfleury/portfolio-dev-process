@@ -25,7 +25,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
     "build": "webpack build --mode development",
-    "webp": "node public/webp.js"
+    "webp": "node public/webp.js",
+    "prepare": "husky"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +49,7 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^10.0.0",
+    "husky": "^9.1.7",
     "prettier": "3.5.3"
   }
 }
