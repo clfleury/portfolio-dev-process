@@ -109,8 +109,8 @@
       },
       "modal_images": [
         {
-          "webp": "images/ecoregions.jpg",
-          "fallback": "images/ecoregions.jpg"
+          "webp": "images/ecoregions.webp",
+          "fallback": "sources/ecoregions.jpg"
         },
         {
           "webp": "sources/southdakota-ecoregion.mp4",
