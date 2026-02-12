@@ -209,7 +209,7 @@
       ],
       "image": {
         "webp": "images/4k-landing.webp",
-        "fallback": "images/4k-landing.jpg"
+        "fallback": "sources/4k-landing.jpg"
       },
       "modal_images": [
         {
