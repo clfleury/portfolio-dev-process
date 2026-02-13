@@ -3,3 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/colettefleury/public_html/
     - /bin/cp public/data.json $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R sources $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R dist $DEPLOYPATH
