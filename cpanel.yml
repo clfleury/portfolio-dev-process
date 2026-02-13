@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/colettefleury/public_html/
+    - /bin/cp /public/data.json $DEPLOYPATH
