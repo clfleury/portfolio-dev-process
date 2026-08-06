@@ -1,7 +1,12 @@
-const path = require("path");
-const webpack = require("webpack");
+import path from "path";
+import webpack from "webpack";
+import { fileURLToPath } from "url";
 
-module.exports = {
+// Node.js ESM does not support __dirname globally, you must define it manually:
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist/"),

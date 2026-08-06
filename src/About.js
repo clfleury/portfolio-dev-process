@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import React from "react";
-import { LoadingIcon } from "./icons/LoadingIcon";
+import { LoadingIcon } from "./icons/LoadingIcon.js";
 import { jsx } from "@emotion/react";
 import { css } from "@emotion/react";
-import { colors } from "./styling/colors";
+import { colors } from "./styling/colors.js";
 
 export default class About extends React.Component {
   render() {
