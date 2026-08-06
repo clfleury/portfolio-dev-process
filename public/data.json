@@ -8,8 +8,8 @@
       "description": "Utilizing three.js and GLSL shaders, I created this experimental visualization series exploring the power of the GPU.",
       "skills": ["THREE.js", "JavaScript", "GLSL", "Generative Art"],
       "image": {
-        "webp": "images/shader-experiments.webp",
-        "fallback": "sources/shader-experiments.png"
+        "webp": "sources/dynamic-shader-gif.gif",
+        "fallback": "sources/dynamic-shader-gif.gif"
       },
       "modal_feature": {
         "webp": "images/shader-experiments.webp",
@@ -25,8 +25,12 @@
           "fallback": "sources/fragment-puck.mp4"
         },
         {
-          "webp": "sources/noisy-round-object.mp4",
-          "fallback": "sources/noisy-round-object.mp4"
+          "webp": "sources/dynamic-shader.mp4",
+          "fallback": "sources/dynamic-shader.mp4"
+        },
+        {
+          "webp": "sources/step-fun.mp4",
+          "fallback": "sources/step-fun.mp4"
         }
       ]
     },
@@ -38,8 +42,8 @@
       "description": "Utilizing various geometric and trigonometric techniques and mapping of data via shape and color, I created this visualization series using randomly generated numerical data with generated and image-extracted color ranges.",
       "skills": ["HTML5 Canvas", "JavaScript", "Generative Art"],
       "image": {
-        "webp": "images/coolfun6.webp",
-        "fallback": "sources/coolfun6.png"
+        "webp": "sources/spiral-gif.gif",
+        "fallback": "sources/spiral-gif.gif"
       },
       "modal_feature": {
         "webp": "images/coolfun6.webp",
@@ -102,19 +106,26 @@
       "project_name": "Mapping Visualizations",
       "project_cat": "Personal",
       "description": "Teach and learn. In my spare time I experiment with D3.js, Blender, and QGIS pipelines to create visualizations and applications that facilitate learning about ecological topics.",
-      "skills": ["D3", "JavaScript", "Interaction Design", "qGIS", "Blender"],
+      "skills": [
+        "D3",
+        "JavaScript",
+        "React Three Fiber",
+        "Interaction Design",
+        "qGIS",
+        "Blender"
+      ],
       "image": {
         "webp": "sources/greatimes.gif",
         "fallback": "sources/greatimes.gif"
       },
       "modal_images": [
         {
-          "webp": "images/ecoregions.webp",
-          "fallback": "sources/ecoregions.jpg"
+          "webp": "sources/test.mp4",
+          "fallback": "sources/test.mp4"
         },
         {
-          "webp": "sources/southdakota-ecoregion.mp4",
-          "fallback": "sources/southdakota-ecoregion.mp4"
+          "webp": "images/ecoregions.webp",
+          "fallback": "sources/ecoregions.jpg"
         },
         {
           "webp": "images/orig-prebake2.webp",

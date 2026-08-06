@@ -1,9 +1,13 @@
+/** @jsx jsx */
 import React, { useState, useLayoutEffect } from "react";
 import { Modal } from "./Modal.js";
 import { LoadingIcon } from "./icons/LoadingIcon";
 import { PortfolioContext } from "./site-contexts";
 import * as R from "ramda";
 import { PortfolioModalContent } from "./PortfolioModalContent.js";
+import { jsx } from "@emotion/react";
+import { css } from "@emotion/react";
+import { colors } from "./styling/colors";
 
 const ProjectList = ({ data }) => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -30,7 +34,19 @@ const ProjectList = ({ data }) => {
   return (
     <PortfolioContext.Provider value={{ data, currentProject, isModalOpen }}>
       <div className="portfolio-container fade-in">
-        <div className="portfolio-style">
+        <div
+          css={css`
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            margin-left: 10%;
+            background-color: ${colors.lightBlue};
+            margin-left: calc(15% - 30px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          `}
+        >
           {mapIndexed((data, key) => {
             return (
               <ProjectItem

@@ -1,5 +1,9 @@
+/** @jsx jsx */
 import React from "react";
 import { LoadingIcon } from "./icons/LoadingIcon";
+import { jsx } from "@emotion/react";
+import { css } from "@emotion/react";
+import { colors } from "./styling/colors";
 
 export default class About extends React.Component {
   render() {
@@ -34,11 +38,12 @@ export default class About extends React.Component {
             </div>
             <div
               className="content"
-              style={{
-                backgroundColor: "#23294d",
-                marginTop: "10px",
-                paddingTop: "20px",
-              }}
+              css={css`
+                background-color: ${colors.lightBlue};
+                margin-top: "10px";
+                padding: 2rem 4rem 3rem;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+              `}
             >
               {this.props.data.about.map(function (data, key) {
                 return <p key={key}>{data}</p>;

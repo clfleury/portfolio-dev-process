@@ -39,6 +39,7 @@ module.exports = {
     },
     // hotOnly
     hot: "only",
+    historyApiFallback: true,
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 };
