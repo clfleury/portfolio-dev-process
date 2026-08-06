@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "css-loader": "^7.1.2",
     "imagemin": "^7.0.1",
-    "imagemin-webp": "^5.1.0",
+    "imagemin-webp": "^8.0.0",
     "ramda": "^0.28.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
