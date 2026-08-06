@@ -37,12 +37,13 @@ export default class About extends React.Component {
               </h2>
             </div>
             <div
-              className="content"
               css={css`
                 background-color: ${colors.lightBlue};
-                margin-top: "10px";
                 padding: 2rem 4rem 3rem;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+                margin: 10px auto 0rem auto;
+                max-width: 50rem;
+                border-radius: 20px;
               `}
             >
               {this.props.data.about.map(function (data, key) {

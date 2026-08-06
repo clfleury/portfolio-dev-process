@@ -45,7 +45,7 @@ export const PortfolioModalContent = ({
   };
 
   const featuredImage = portfolio[currentProjectNum].hasOwnProperty(
-    "modal_feature"
+    "modal_feature",
   )
     ? portfolio[currentProjectNum].modal_feature
     : portfolio[currentProjectNum].image;
@@ -80,7 +80,7 @@ export const PortfolioModalContent = ({
                 borderRadius: "20px",
                 backgroundPosition: "center",
                 backgroundImage: document.documentElement.classList.contains(
-                  "webp"
+                  "webp",
                 )
                   ? "url(" + featuredImage.webp + ")"
                   : "url(" + featuredImage.fallback + ")",
@@ -138,7 +138,14 @@ export const PortfolioModalContent = ({
               return (
                 <>
                   {dataImg.includes("mp4") ? (
-                    <video width="100%" autoPlay={true} loop key={dataImg}>
+                    <video
+                      width="100%"
+                      autoPlay={true}
+                      loading="lazy"
+                      loop
+                      key={dataImg}
+                      playsinline
+                    >
                       <source src={dataImg} type="video/mp4" />
                     </video>
                   ) : (
