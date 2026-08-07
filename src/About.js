@@ -44,6 +44,9 @@ export default class About extends React.Component {
                 margin: 10px auto 0rem auto;
                 max-width: 50rem;
                 border-radius: 20px;
+                @media (max-width: 800px) {
+                  padding: 1.5rem 2rem;
+                }
               `}
             >
               {this.props.data.about.map(function (data, key) {

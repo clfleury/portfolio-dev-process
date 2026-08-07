@@ -131,7 +131,7 @@ export const PortfolioModalContent = ({
               </p>
             </div>
             {data.portfolio[currentProjectNum].modal_images.map((data, key) => {
-              var dataImg;
+              let dataImg;
               document.documentElement.classList.contains("webp")
                 ? (dataImg = data.webp)
                 : (dataImg = data.fallback);
@@ -145,6 +145,7 @@ export const PortfolioModalContent = ({
                       loop
                       key={dataImg}
                       playsinline
+                      mute
                     >
                       <source src={dataImg} type="video/mp4" />
                     </video>
