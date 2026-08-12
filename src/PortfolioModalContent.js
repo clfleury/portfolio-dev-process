@@ -145,7 +145,7 @@ export const PortfolioModalContent = ({
                       loop
                       key={dataImg}
                       playsinline
-                      mute
+                      muted
                     >
                       <source src={dataImg} type="video/mp4" />
                     </video>
