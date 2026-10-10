@@ -42,14 +42,18 @@
       "description": "Utilizing various geometric and trigonometric techniques and mapping of data via shape and color, I created this visualization series using randomly generated numerical data with generated and image-extracted color ranges.",
       "skills": ["HTML5 Canvas", "JavaScript", "Generative Art"],
       "image": {
-        "webp": "sources/spiral-gif.gif",
-        "fallback": "sources/spiral-gif.gif"
+        "webp": "sources/variety-pack.gif",
+        "fallback": "sources/variety-pack.gif"
       },
       "modal_feature": {
         "webp": "images/coolfun6.webp",
         "fallback": "sources/coolfun6.png"
       },
       "modal_images": [
+        {
+          "webp": "sources/variety-pack.mp4",
+          "fallback": "sources/variety-pack.mp4"
+        },
         { "webp": "sources/auto-gen.mp4", "fallback": "sources/auto-gen.mp4" },
         {
           "webp": "sources/spiral-fun.mp4",
