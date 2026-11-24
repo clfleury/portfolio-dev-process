@@ -1,16 +1,15 @@
-import React from "react";
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { LoadingIcon } from "./icons/LoadingIcon";
-import ScrollToTop from "./scrollTop";
-import { Layout } from "./layout";
+import { LoadingIcon } from "./icons/LoadingIcon.js";
+import ScrollToTop from "./scrollTop.jsx";
+import { Layout } from "./layout.jsx";
 
 // Pages
-import { Home } from "./home";
+import { Home } from "./home.jsx";
 
-const About = React.lazy(() => import("./About"));
-const Portfolio = React.lazy(() => import("./Portfolio"));
-const Redirect = React.lazy(() => import("./Redirect"));
+const About = React.lazy(() => import("./About.js"));
+const Portfolio = React.lazy(() => import("./Portfolio.js"));
+const Redirect = React.lazy(() => import("./Redirect.js"));
 
 class AppContainer extends React.Component {
   constructor(props) {

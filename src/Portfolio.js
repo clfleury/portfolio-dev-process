@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import React, { useState, useLayoutEffect } from "react";
 import { Modal } from "./Modal.js";
-import { LoadingIcon } from "./icons/LoadingIcon";
-import { PortfolioContext } from "./site-contexts";
+import { LoadingIcon } from "./icons/LoadingIcon.js";
+import { PortfolioContext } from "./site-contexts.js";
 import * as R from "ramda";
 import { PortfolioModalContent } from "./PortfolioModalContent.js";
 import { jsx } from "@emotion/react";
 import { css } from "@emotion/react";
-import { colors } from "./styling/colors";
+import { colors } from "./styling/colors.js";
 
 const ProjectList = ({ data }) => {
   const [currentProject, setCurrentProject] = useState(0);

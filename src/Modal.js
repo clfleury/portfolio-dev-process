@@ -1,5 +1,5 @@
 import React from "react";
-import { PortfolioContext } from "./site-contexts";
+import { PortfolioContext } from "./site-contexts.js";
 
 export const Modal = ({ closeModal, ModalContent }) => {
   return (

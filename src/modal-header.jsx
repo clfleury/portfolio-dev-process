@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
 import { css } from "@emotion/react";
-import { colors } from "./styling/colors";
+import { colors } from "./styling/colors.js";
 import React from "react";
 
 export const ModalHeader = ({ projectCategory, projectName, projectDate }) => {

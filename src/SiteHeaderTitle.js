@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
 import { css } from "@emotion/react";
-import { fontSizes, fontSpacings } from "./styling/font-styles";
+import { fontSizes, fontSpacings } from "./styling/font-styles.js";
 
 export const SiteHeaderTitle = ({ title }) => {
   return (

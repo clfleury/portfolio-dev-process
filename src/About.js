@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import React from "react";
-import { LoadingIcon } from "./icons/LoadingIcon";
+import { LoadingIcon } from "./icons/LoadingIcon.js";
 import { jsx } from "@emotion/react";
 import { css } from "@emotion/react";
-import { colors } from "./styling/colors";
+import { colors } from "./styling/colors.js";
 
 export default class About extends React.Component {
   render() {
@@ -44,6 +44,9 @@ export default class About extends React.Component {
                 margin: 10px auto 0rem auto;
                 max-width: 50rem;
                 border-radius: 20px;
+                @media (max-width: 800px) {
+                  padding: 1.5rem 2rem;
+                }
               `}
             >
               {this.props.data.about.map(function (data, key) {
